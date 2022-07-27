@@ -1,187 +1,308 @@
-<DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Matt Willis - The Portfolio</title>
-        <link href="styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rammetto+One&family=Righteous&family=Roboto+Serif:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
-      </head>
-      <body>
-        <header>
-          <nav class="main-nav">
-            <a href="#" class="logo">Matt Willis</a>
-              <ul class="main-nav-menu">
-                <li class="main-nav-item">
-                  <a href="#" class="nav-link">Skills</a>
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <title>Matt Willis - The Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+      <header>
+        <nav class="main-nav">
+          <a href="#" class="logo">Matt Willis</a>
+          <ul class="main-nav-menu">
+            <li class="main-nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="#Projects" class="nav-link">Projects</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="#Contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        </nav>
+        
+      </header>
+      <div class="dark-mode is-visible">
+        <div class="dark-mode-container">
+          <label class="theme-slider" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="round slider"></div>
+          </label>
+          <span class="dm-label">DARK MODE</span>
+        </div>
+      </div>
+      <main>
+        <section id="Intro">
+          <div id="hero-container">
+            <div class="hero-title">
+              <p class="welcome-text">Hi, I'm <span class="welcome-text underline">Matt</span>.</p>
+              <p class="welcome-text">Web Developer</p>
+            </div>
+            <div class="intro-image-container">
+              <div class="header-img-container">
+                <img class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
+              </div>
+            </div>
+            <div class="portfolio-btn-container">
+              <a class="portfolio-button">
+                <span>View My Projects</span>
+                <div class="icon-container">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+            <p class="intro-text">
+              Being able to create something from nothing, waving your creative wand and solve problems at the same time - it's really special. <br><br>That's why I love to code!
+            </p>    
+          </div>
+        </section> <!-- closing intro section -->
+        <section id="Projects">
+          <div class="section-header">
+            <h3 class="section-header-text">#Recent Projects</h3>
+          </div>
+          <div id="project-group-container">
+            <div class="project-group-item js-scroll fade-in-bottom" id="project-1">
+              <h5 class="project-title">The Portfolio</h5>
+              <div class="project-img-container">
+                <img class="project-img" src="./Images/Portfolio Image.png" alt="placeholder image">
+              </div>
+              <h6>Technologies:</h6>
+              <div class="tech-logo-container id=tech-logo-project-1">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="button-group">
+                <button class="project-button">
+                  <p><a href="#">Live project</a></p>
+                </button>
+                <button class="github-button">
+                  <p><a href="#">Github Repository</a></p>
+                </button>
+              </div>
+            </div>  <!-- closing project id=project-1 -->
+            <div class="project-group-item scroll-element js-scroll fade-in-bottom" id="project-2">
+              <h5 class="project-title">The 'Other' Portfolio</h5>
+              <div class="project-img-container">
+                <img class="project-img" src="./Images/Portfolio 2 Image.png" alt="placeholder image">
+              </div>
+              <h6>Technologies:</h6>
+              <div class="tech-logo-container id=tech-logo-project-2">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <div class="button-group">
+                <button class="project-button">
+                  <p><a href="#">Live project</a></p>
+                </button>
+                <button class="github-button">
+                  <p><a href="#">Git Repository</a></p>
+                </button>
+              </div>
+            </div>  <!--------- closing project id=project-2 ---------->
+            <div class="project-group-item scroll-element js-scroll fade-in-bottom" id="project-3">
+              <h5 class="project-title">The Online Shop</h5>
+              <div class="project-img-container">
+                <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
+              </div>
+              <h6>Technologies:</h6>
+                <div class="tech-logo-container id=tech-logo-project-3">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              <div class="button-group">
+                <button class="project-button">
+                  <p><a href="#">Live project</a></p>
+                </button>
+                <button class="github-button">
+                  <p><a href="#">Git Repository</a></p>
+                </button>
+              </div>
+            </div>  <!--------- closing project id=project-3 ----------->
+            <div class="project-group-item scroll-element js-scroll fade-in-bottom" id="project-4">
+              <h5 class="project-title">The Online Shop</h5>
+              <div class="project-img-container">
+                <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
+              </div>
+              <h6>Technologies:</h6>
+                <div class="tech-logo-container id=tech-logo-project-3">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              <div class="button-group">
+                <button class="project-button">
+                  <p><a href="#">live project</a></p>
+                </button>
+                <button class="github-button">
+                  <p><a href="#">Git Repository</a></p>
+                </button>
+              </div>
+            </div>  <!--------- closing project id=project-4 ----------->
+          </div> <!-------- CLOSING PROJECT CONTAINER -------------->
+          <a class="portfolio-button view-all-btn">
+            <span>View All Projects</span>
+            <div class="icon-container">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>  
+        </section> <!------- closing projects section ----------->
+        <section id="skills">
+          <div class="section-header">
+            <h3 class="section-header-text">#Skills & tech stack</h3>
+          </div>
+          <div class="skills-container">
+            <div class="skills-text">
+              <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects, providing strategic direction and building strong professional relationships.  Thriving in face-paced, dynamic environments, I have demonsrated an ability to problem-solve,</p>
+            </div>
+            <div class="tech-skills-container">
+              <h3>Tech Stack:</h3>
+              <ul class="skills-list">
+                <li class="skill">
+                  <span>html</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
                 </li>
-                <li class="main-nav-item">
-                  <a href="#Projects" class="nav-link">Projects</a>
+                <li class="skill">
+                  <span>css</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
                 </li>
-                <li class="main-nav-item">
-                  <a href="#Contact" class="nav-link">Contact</a>
+                <li class="skill">
+                  <span>javaScript</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                </li>
+                <li class="skill">
+                  <span>react</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                </li>
+                <li class="skill">
+                  <span>git</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-git"></i>
+                  </div>
+                </li>
+                <li class="skill">
+                  <span>node.js</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-node-js"></i>
+                  </div>
+                </li>
+                <li class="skill">
+                  <span>github</span>
+                  <div class="skill-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </div>                    
+                </li>
+                <li class="skill">
+                    <span>sass</span>
+                    <div class="skill-icon">
+                      <i class="fa-brands fa-sass"></i>
+                    </div>
                 </li>
               </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            </div>
+          </div>
+          <a class="portfolio-button view-all-btn">
+            <span>View full CV</span>
+            <div class="icon-container">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </section>  <!-- closing SKILLS section -->
+        <section id="Contact">
+          <div class="section-header">
+            <h3 class="section-header-text">#Contact</h3>
+          </div>
+          <div class="contact-container">
+            <article class="contact-info">
+              <span class="contact-question">Want To Get In Touch?</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio eaque aliquam aliquid, commodi iure!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, ducimus.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatem illo ea!</p>
+            </article>
+              <div class="social-media-container">
+                <a href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/" target="_blank">
+                  <div class="social-media-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </a>
+                <a href="https://github.com/Matt-Willis-20" target="_blank">
+                  <div class="social-media-item">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                </a>
               </div>
-          </nav>
-        </header>
-        <main>
-          <div class="title">
-            <h1 class="title-sub">Portfolio</h1>
-          </div>
-          <div class="header-img-container">
-            <img class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
-          </div>
+                          
             
-          <div class="dark-mode-container">
-            <label class="theme-slider" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="round slider"></div>
-            </label>
-            <span class="dm-label">DARK MODE</span>
+            <article>
+              <form class="form contact-form  js-scroll fade-in-right ">
+                <!-- single form row -->
+                <div class="form-row">
+                  <label for="name" class="form-label">your name</label>
+                  <input type="text" name="name" id="name" class="form-input" placeholder="Enter name...">  <!-- ID and for should be the same  --> 
+                </div>
+                <!-- end of single form row -->
+                <!-- single form row -->
+                <div class="form-row">
+                  <label for="email" class="form-label" required>Topic</label>
+                  <input type="text" name="email" id="email" class="form-input">  <!-- ID and for should be the same  --> 
+                </div>
+                <!-- end of single form row -->
+                <!-- single form row -->
+                <div class="form-row">
+                  <label for="message" class="form-label" >Message</label>
+                  <textarea name="message" id="mesage" class="form-textarea" placeholder="Enter message here..."></textarea>  <!-- no need to cols or rows because these have been created in global css -->
+                </div>
+                <!-- end of single form row -->
+                <button type="submit" class="btn btn-block">Submit</button>
+              </form>
+            </article>
           </div>
-          
-
-            <section id="Intro">
-              <div id="intro-container">
-                <div id="intro-text">
-                  <p>
-                      Hi! I'm Matt, and welcome to my portfolio of work!
-                  </p><br>
-                  <p>I began my coding journey at the start of January 2022 and haven't looked back since.</p>  
-                  <br>
-                  <p>I'm taking a fairly 'traditional' route, guided by the awesome team at <a href="codecademy.com">Codecademy</a>: HTML, CSS, and them moving into JavaScript.  As I progres through my Front End Developer pathway, I'll be updating this site with new projects, and this portfolio site itself.</p>
-                </div>
-              </div>
-            </section> <!-- closing intro section -->
-
-            <section id="Projects">
-                <div class="section-header">
-                    <h3 class="section-header-text">#Projects</h3>
-                </div>
-                <div id="project-group-container">
-                  <div class="project-group-item" id="project-1">
-                    <h4 class="project-number">Project #1</h4>
-                    <h5 class="project-title">The Portfolio</h5>
-                    <div class="project-img-container">
-                      <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
-                    </div>
-                    <h6>Technologies:</h6>
-                    <div class="tech-logo-container id=tech-logo-project-1">
-                       <img src="./Images/logo-html5.svg" alt="HTML5 logo" class="logo-img">
-                       <img src="./Images/logo-css3.svg" alt="CSS3 logo" class="logo-img">
-                       <img src="./Images/logo-javascript.svg" alt="JavaScript logo" class="logo-img">
-                    </div>
-                    <span class="project-description">This project is my first time at doing something like this.  I'm not sure about what to write, but I will carry on for a little bit longer.  Hopefully this gives me enough text to see what it looks like.</span>
-                    <div class="button-group">
-                      <button class="project-button">
-                        <p><a href="#">Go to project</a></p>
-                      </button>
-                      <button class="github-button">
-                        <p><a href="#">View on Github</a></p>
-                      </button>
-                    </div>
-
-                  </div>  <!-- closing project id=project-1 -->
-
-                  <div class="project-group-item" id="project-2">
-                    <h4 class="project-number">Project #2</h4>
-                    <h5 class="project-title">The Photo Gallery</h5>
-                    <div class="project-img-container">
-                      <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
-                    </div>
-                    <h6>Technologies:</h6>
-                    <div class="tech-logo-container id=tech-logo-project-2">
-                     <img src="./Images/logo-html5.svg" alt="HTML5 logo" class="logo-img">
-                     <img src="./Images/logo-css3.svg" alt="CSS3 logo" class="logo-img">
-                     <img src="./Images/logo-javascript.svg" alt="JavaScript logo" class="logo-img">
-                    </div>
-                      <span class="project-description">This project is my first time at doing something like this.  I'm not sure about what to write, but I will carry on for a little bit longer.  Hopefully this gives me enough text to see what it looks like.</span>
-                    <div class="button-group">
-                      <button class="project-button">
-                        <p><a href="#">Go to project</a></p>
-                      </button>
-                      <button class="github-button">
-                        <p><a href="#">View on Github</a></p>
-                      </button>
-                    </div>
-                  </div>  <!--------- closing project id=project-2 ---------->
-
-                  <div class="project-group-item" id="project-3">
-                    <h4 class="project-number">Project #3</h4>
-                    <h5 class="project-title">The Online Shop</h5>
-                    <div class="project-img-container">
-                      <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
-                    </div>
-                    <h6>Technologies:</h6>
-                    <div class="tech-logo-container id=tech-logo-project-3">
-                     <img src="./Images/logo-html5.svg" alt="HTML5 logo" class="logo-img">
-                     <img src="./Images/logo-css3.svg" alt="CSS3 logo" class="logo-img">
-                     <img src="./Images/logo-javascript.svg" alt="JavaScript logo" class="logo-img">
-                    </div>
-                    <span class="project-description">This project is my first time at doing something like this.  I'm not sure about what to write, but I will carry on for a little bit longer.  Hopefully this gives me enough text to see what it looks like.</span>
-                    <div class="button-group">
-                      <button class="project-button">
-                        <p><a href="#">Go to project</a></p>
-                      </button>
-                      <button class="github-button">
-                        <p><a href="#">View on Github</a></p>
-                      </button>
-                    </div>
-                  </div>  <!--------- closing project id=project-3 ----------->
-
-                  <div class="project-group-item" id="project-4">
-                    <h4 class="project-number">Project #4</h4>
-                    <h5 class="project-title">The Online Shop</h5>
-                    <div class="project-img-container">
-                      <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
-                    </div>
-                    <h6>Technologies:</h6>
-                    <div class="tech-logo-container id=tech-logo-project-4">
-                     <img src="./Images/logo-html5.svg" alt="HTML5 logo" class="logo-img">
-                     <img src="./Images/logo-css3.svg" alt="CSS3 logo" class="logo-img">
-                     <img src="./Images/logo-javascript.svg" alt="JavaScript logo" class="logo-img">
-                    </div>
-                    <span class="project-description">This project is my first time at doing something like this.  I'm not sure about what to write, but I will carry on for a little bit longer.  Hopefully this gives me enough text to see what it looks like.</span>
-                    <div class="button-group">
-                      <button class="project-button">
-                        <p><a href="#">Go to project</a></p>
-                      </button>
-                      <button class="github-button">
-                        <p><a href="#">View on Github</a></p>
-                      </button>
-                    </div>
-                  </div>  <!--------- closing project id=project-4 ----------->
-                </div>  <!-------- CLOSING PROJECT CONTAINER -------------->
-              </section> <!------- closing projects section ----------->
-            
-
-              <section id="skills">
-                <div class="section-header">
-                  <h3 class="section-header-text">#Skills</h3>
-                </div>
-                <div class="skills-container">
-                  
-                </div>
-
-              </section>  <!-- closing SKILLS section -->
-
-              <section id="Contact">
-                <div class="section-header">
-                  <h3 class="section-header-text">#Contact</h3>
-                </div>
-
-              </section>  <!-- closing contact section -->
-        </main>
-          <footer>
-
-          </footer>
-          <script src="script.js"></script>
-      </body>
-    </html>
+        </section>  <!-- closing contact section -->
+      </main>
+      <footer>
+          <div class="links-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">View CV</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+        
+        <p>&copy; <span id="date"></span>
+          <span class="highlight">My Portfolio</span> Built by Matt Willis
+        </p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
+</DOCTYPE>
