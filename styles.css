@@ -977,7 +977,6 @@ input:checked+.slider:before {
   }
   ::placeholder {
     font-family: inherit;
-    
   }
 
   .contact-form {
@@ -1064,7 +1063,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     text-align: left;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 4.5rem;
     max-width: 300px;
 }
 
