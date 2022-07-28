@@ -26,6 +26,9 @@
               <a href="#Projects" class="nav-link">Projects</a>
             </li>
             <li class="main-nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="main-nav-item">
               <a href="#" class="nav-link">Blog</a>
             </li>
             <li class="main-nav-item">
@@ -76,7 +79,9 @@
         </section> <!-- closing intro section -->
         <section id="Projects">
           <div class="section-header">
-            <h3 class="section-header-text">#Recent Projects</h3>
+            <div class="header-text-container">
+              <h3 class="section-header-text">Recent Projects</h3>
+            </div>
           </div>
           <div id="project-group-container">
             <div class="project-group-item js-scroll fade-in-bottom" id="project-1">
@@ -84,12 +89,7 @@
               <div class="project-img-container">
                 <img class="project-img" src="./Images/Portfolio Image.png" alt="placeholder image">
               </div>
-              <h6>Technologies:</h6>
-              <div class="tech-logo-container id=tech-logo-project-1">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-              </div>
+              
               <div class="button-group">
                 <button class="project-button">
                   <p><a href="#">Live project</a></p>
@@ -104,13 +104,6 @@
               <div class="project-img-container">
                 <img class="project-img" src="./Images/Portfolio 2 Image.png" alt="placeholder image">
               </div>
-              <h6>Technologies:</h6>
-              <div class="tech-logo-container id=tech-logo-project-2">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-sass"></i>
-              </div>
               <div class="button-group">
                 <button class="project-button">
                   <p><a href="#">Live project</a></p>
@@ -123,14 +116,9 @@
             <div class="project-group-item scroll-element js-scroll fade-in-bottom" id="project-3">
               <h5 class="project-title">The Online Shop</h5>
               <div class="project-img-container">
-                <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
+                <img class="project-img" src="./Images/Portfolio Image.png" alt="placeholder image">
               </div>
-              <h6>Technologies:</h6>
-                <div class="tech-logo-container id=tech-logo-project-3">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                </div>
+              
               <div class="button-group">
                 <button class="project-button">
                   <p><a href="#">Live project</a></p>
@@ -145,12 +133,7 @@
               <div class="project-img-container">
                 <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
               </div>
-              <h6>Technologies:</h6>
-                <div class="tech-logo-container id=tech-logo-project-3">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                </div>
+              
               <div class="button-group">
                 <button class="project-button">
                   <p><a href="#">live project</a></p>
@@ -170,10 +153,14 @@
         </section> <!------- closing projects section ----------->
         <section id="skills">
           <div class="section-header">
-            <h3 class="section-header-text">#Skills & tech stack</h3>
+            <div class="header-text-container">
+              <h3 class="section-header-text">[ Skills & tech stack ]</h3>
+            </div>
           </div>
           <div class="skills-container">
+            
             <div class="skills-text">
+              <h3>Skills & Experience:</h3>
               <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects, providing strategic direction and building strong professional relationships.  Thriving in face-paced, dynamic environments, I have demonsrated an ability to problem-solve,</p>
             </div>
             <div class="tech-skills-container">
@@ -239,15 +226,16 @@
         </section>  <!-- closing SKILLS section -->
         <section id="Contact">
           <div class="section-header">
-            <h3 class="section-header-text">#Contact</h3>
+            <div class="header-text-container">
+              <h3 class="section-header-text">Contact</h3>
+            </div>
           </div>
           <div class="contact-container">
-            <article class="contact-info">
-              <span class="contact-question">Want To Get In Touch?</span>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio eaque aliquam aliquid, commodi iure!</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, ducimus.</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatem illo ea!</p>
-            </article>
+            <div class="contact-info contact-left">
+              <h3 class="contact-question">Want To Get In Touch?</h3>
+              <p>If you want to chat, please get in touch.</p>
+              <p>I'm always on the lookout for new projects to take on.</p>
+              <p>You can reach me on my social channels by clicking the icons below, or if you prefer, you can complete the form.</p>
               <div class="social-media-container">
                 <a href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/" target="_blank">
                   <div class="social-media-item">
@@ -260,10 +248,9 @@
                   </div>
                 </a>
               </div>
-                          
-            
-            <article>
-              <form class="form contact-form  js-scroll fade-in-right ">
+            </div>
+            <article class="contact-right">
+              <form class="form contact-form  js-scroll fade-in-right">
                 <!-- single form row -->
                 <div class="form-row">
                   <label for="name" class="form-label">your name</label>
