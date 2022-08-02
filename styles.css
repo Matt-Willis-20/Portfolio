@@ -17,7 +17,7 @@
     --border-top-1: rgb(41, 41, 34);
     --icon-color: rgb(66, 66, 66);
     --max-width: 1300px;
-    --logo-container-background-color: rgb(255, 255, 255);
+    --logo-container-background-color: rgb(240, 240, 240);
     --portfolio-btn-color: rgb(39, 40, 43); 
     --portfolio-btn-span: rgb(255, 255, 255);
     --project-border: none;
@@ -597,7 +597,7 @@ input:checked+.slider:before {
     max-width: 400px;
     margin: 1.5rem auto;
     padding: 1.2rem;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: var(--project-box-shadow);
     border: var(--project-border);
     background-color: var(--logo-container-background-color);
@@ -1118,6 +1118,7 @@ footer {
 .filter-button, .tag, .read-more-btn {
     padding: .4rem .6rem;
     border: none;
+    border-radius: 5px;
     margin: 0.3rem 0.3rem 0.3rem 0;
     background-color: rgb(228, 228, 228);
     font-family: monospace;
@@ -1139,15 +1140,17 @@ footer {
 .project-container {
     padding: 1rem;
     margin-bottom: 2rem;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
 }
 
 .project-details-container {
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .project-image-container img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .tag-list {
@@ -1161,7 +1164,7 @@ footer {
 
 .project-details-text p {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
