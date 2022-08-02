@@ -1,8 +1,7 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+       
       <title>Matt Willis - The Portfolio</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +88,6 @@
               <div class="project-img-container">
                 <img class="project-img" src="./Images/Portfolio Image.png" alt="placeholder image">
               </div>
-              
               <div class="button-group">
                 <button class="project-button">
                   <p><a href="https://matt-willis-portfolio.netlify.app/">Live project</a></p>
@@ -129,17 +127,17 @@
               </div>
             </div>  <!--------- closing project id=project-3 ----------->
             <div class="project-group-item scroll-element js-scroll fade-in-bottom" id="project-4">
-              <h5 class="project-title">The Online Shop</h5>
+              <h5 class="project-title">Wigmore Raiders</h5>
               <div class="project-img-container">
-                <img class="project-img" src="./Images/placeholder.jpg" alt="placeholder image">
+                <img class="project-img" src="./Images/Raiders.png" alt="webpage image">
               </div>
               
               <div class="button-group">
                 <button class="project-button">
-                  <p><a href="#">live project</a></p>
+                  <p><a href="https://wigmore-raiders.netlify.app/">live project</a></p>
                 </button>
                 <button class="github-button">
-                  <p><a href="#">Git Repository</a></p>
+                  <p><a href="https://github.com/Matt-Willis-20/Wigmore-Raiders">Git Repository</a></p>
                 </button>
               </div>
             </div>  <!--------- closing project id=project-4 ----------->
@@ -154,13 +152,12 @@
         <section id="skills">
           <div class="section-header">
             <div class="header-text-container">
-              <h3 class="section-header-text">[ Skills & tech stack ]</h3>
+              <h3 class="section-header-text">Skills & Experience</h3>
             </div>
           </div>
           <div class="skills-container">
             
             <div class="skills-text">
-              <h3>Skills & Experience:</h3>
               <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects, providing strategic direction and building strong professional relationships.  Thriving in face-paced, dynamic environments, I have demonsrated an ability to problem-solve,</p>
             </div>
             <div class="tech-skills-container">
@@ -232,20 +229,23 @@
           </div>
           <div class="contact-container">
             <div class="contact-info contact-left">
-              <h3 class="contact-question">Want To Get In Touch?</h3>
+              <div class="contact-text">
               <p>If you want to chat, please get in touch.</p>
               <p>I'm always on the lookout for new projects to take on.</p>
               <p>You can reach me on my social channels by clicking the icons below, or if you prefer, you can complete the form.</p>
+            </div>
               <div class="social-media-container">
-                <a href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/" target="_blank">
+                <a class="social-link-container" href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/" target="_blank">
                   <div class="social-media-item">
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
+                  <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com/Matt-Willis-20" target="_blank">
+                <a class="social-link-container" href="https://github.com/Matt-Willis-20" target="_blank">
                   <div class="social-media-item">
                     <i class="fa-brands fa-github"></i>
                   </div>
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -253,23 +253,23 @@
               <form class="form contact-form  js-scroll fade-in-right">
                 <!-- single form row -->
                 <div class="form-row">
-                  <label for="name" class="form-label">your name</label>
+                  <label for="name" class="form-label">your name:</label>
                   <input type="text" name="name" id="name" class="form-input" placeholder="Enter name...">  <!-- ID and for should be the same  --> 
                 </div>
                 <!-- end of single form row -->
                 <!-- single form row -->
                 <div class="form-row">
-                  <label for="email" class="form-label" required>Topic</label>
-                  <input type="text" name="email" id="email" class="form-input">  <!-- ID and for should be the same  --> 
+                  <label for="email" class="form-label" required>Topic:</label>
+                  <input type="text" name="email" id="email" class="form-input" placeholder="Choose topic...">  <!-- ID and for should be the same  --> 
                 </div>
                 <!-- end of single form row -->
                 <!-- single form row -->
                 <div class="form-row">
-                  <label for="message" class="form-label" >Message</label>
+                  <label for="message" class="form-label" >Message:</label>
                   <textarea name="message" id="mesage" class="form-textarea" placeholder="Enter message here..."></textarea>  <!-- no need to cols or rows because these have been created in global css -->
                 </div>
                 <!-- end of single form row -->
-                <button type="submit" class="btn btn-block">Submit</button>
+                <button type="submit" class="submit-btn btn-block">Submit</button>
               </form>
             </article>
           </div>
