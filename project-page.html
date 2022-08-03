@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <title>The Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+      <header>
+        <nav class="main-nav">
+          <a href="./index.html" class="logo">Matt Willis</a>
+          <ul class="main-nav-menu">
+            <li class="main-nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="./about.html" class="nav-link">About</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="./projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="./skills.html" class="nav-link">Skills</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="./blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        </nav>
+        
+      </header>
+      <div class="dark-mode is-visible">
+        <div class="dark-mode-container">
+          <label class="theme-slider" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="round slider"></div>
+          </label>
+          <span class="dm-label">DARK MODE</span>
+        </div>
+      </div>
+      <main>
+        <section class="page-container">
+            <h1 class="page-title">The Portfolio</h1>
+            <div class="tag-container">
+                <ul class="tag-list">
+                  <li class="tag">html / css</li>
+                  <li class="tag">javascript</li>
+                </ul>
+              </div>
+              <br>
+              
+              <div class="project-video-container">
+              <video controls src="./Images/Matt Willis - The Portfolio - Google Chrome - 3 August 2022.mp4">
+            
+              </video>
+            </div>
+
+              <div class="button-group">
+              <button class="project-button" >
+                <p><a href="https://matt-willis-portfolio.netlify.app/">Go To Live Project</p></a>
+              </button>
+              <button class="project-button" >
+                <p><a href="https://matt-willis-portfolio.netlify.app/">GitHub Repository</p></a>
+              </button>
+            </div>
+
+            <h3>Introduction</h3>
+            <p>My portfolio showcases not only the projects that I have created, but the skills that I have learned along the way.  This has been my favourite project so far, and I'm proud of the fact that it is an original design.
+            <h3>What did I learn?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum quam minima consequatur recusandae, perspiciatis sint, cupiditate, totam ullam ipsam error excepturi soluta.</p>
+            <h4 class="key-learnings">Key Learnings:</h4>
+                      <ul class="key-learnings-list">
+                        <li class="key-learnings-item">How to implement a dark/light theme</li>
+                        <li class="key-learnings-item">The importance of planning before coding</li>
+                        <li class="key-learnings-item">How to fade-in elements on scroll</li>
+                      </ul>
+            <h3>What challenges did I face?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum quam minima consequatur recusandae, perspiciatis sint, cupiditate, totam ullam ipsam error excepturi soluta.</p>
+            <h4 class="key-learnings">Key Learnings:</h4>
+                      <ul class="key-learnings-list">
+                        <li class="key-learnings-item">How to implement a dark/light theme</li>
+                        <li class="key-learnings-item">The importance of planning before coding</li>
+                        <li class="key-learnings-item">How to fade-in elements on scroll</li>
+                      </ul>
+            <h3>How would I improve this project?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum quam minima consequatur recusandae, perspiciatis sint, cupiditate, totam ullam ipsam error excepturi soluta.</p>
+            
+            
+            <button>Back to All projects</button>
+                  
+             
+            
+      </main>
+      <footer>
+          <div class="links-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">View CV</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+        
+        <p>&copy; <span id="date"></span>
+          <span class="highlight">My Portfolio</span> Built by Matt Willis
+        </p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
+</DOCTYPE>

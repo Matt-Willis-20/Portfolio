@@ -9,19 +9,19 @@
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(111, 221, 21);
     --text-color: rgb(66, 66, 66);
-    --background-color: rgb(251, 251, 251);
+    --background-color: rgb(255, 255, 255);
     --heading-color: rgb(39, 40, 43);
     --img-container-outline-color: rgb(255, 255, 255);
     --skills-color: rgb(39, 40, 43);
     --shadow-color-1: rgb(90, 90, 90);
     --border-top-1: rgb(41, 41, 34);
     --icon-color: rgb(66, 66, 66);
-    --max-width: 1300px;
-    --logo-container-background-color: rgb(240, 240, 240);
+    --max-width: 1200px;
+    --logo-container-background-color: rgb(235, 235, 235);
     --portfolio-btn-color: rgb(39, 40, 43); 
     --portfolio-btn-span: rgb(255, 255, 255);
     --project-border: none;
-    --project-box-shadow: 0px 0px 8px rgba(85, 85, 85, 0.25);
+    --project-box-shadow: 2px 2px 8px rgba(85, 85, 85, 0.4);
     --opacity-filter: rgba(255, 255, 255, 0.7);
     --section-border-top: rgba(39, 40, 43, 0.05);
 
@@ -38,11 +38,11 @@
     --shadow-color-1: rgb(111, 221, 21);
     --border-top-1: rgb(111, 221, 21);;
     --icon-color: rgb(111, 221, 21);
-    --logo-container-background-color: rgba(255, 255, 255, 0.15);
+    --logo-container-background-color: rgba(78, 78, 78, 0.15);
     --portfolio-btn-color: rgb(111, 221, 21);;
     --portfolio-btn-span: rgb(39, 40, 43);
     --project-border: inset 0 0 7px rgba( 0,0,0,0.08);;
-    --project-box-shadow: 0px 0px 8px rgba(85, 85, 85, 0.25);
+    --project-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     --opacity-filter: rgba(39, 40, 43, 0.7);
     --section-border-top: rgba(111, 221, 21, 0.2);
 }
@@ -85,6 +85,14 @@ a {
 
 li {
     list-style: none;
+}
+
+video {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .header-text-container {
@@ -363,7 +371,7 @@ input:checked+.slider:before {
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 100px) {
     .dark-mode-container {
         padding: 1.3rem 0;
     }
@@ -716,44 +724,47 @@ input:checked+.slider:before {
 
 .button-group {
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
-    flex-direction:column;
-    margin-top: 1.5rem;
 }
 
-.project-button, .github-button {
-    border-radius: 13px;
+.project-button, .github-button, .read-more-btn {
+    border-radius: 5px;
     border: none;
     width: 100%;
-    height: 35px;
-    margin: 0.4rem auto;
-    padding: 0.7rem 0;
+    height: 30px;
+    padding: 0.5rem 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 4px rgba( 0,0,0,0.1);
 }
 
 .project-button:active, .github-button:active {
-    box-shadow: 1px 1px 3px rgba( 0,0,0,0.4);
+    box-shadow: 1px 1px 4px rgba( 0,0,0,0.4);
 }
 
 .project-button a, .github-button a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: monospace;
 }
 
 .project-button {
     background-color:rgb(116, 230, 22);
+    margin-top: 1rem;
 }
 
 .project-button:hover {
-    background-color: rgb(147, 196, 33)
+    background-color: rgb(255, 145, 0)
 }
 
 .github-button {
     background-color: rgb(44, 45, 48);
     color: white;
+    width: 50%;
+    margin-left: auto;
+    max-width: 130px;
 }
 
 .github-button a {
@@ -1094,18 +1105,18 @@ footer {
 
 /* ---------- Projects Page ------------- */
 
-
-
 .page-container {
     position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
+    width: 90%;
 }
 
 .page-title {
     color: var(--text-color);
     font-size: 2.5rem;
+    margin: 1.5rem 0 0.75rem;
 }
 
 .filter-buttons-container {
@@ -1115,42 +1126,66 @@ footer {
     padding-bottom: 2rem;
 }
 
-.filter-button, .tag, .read-more-btn {
-    padding: .4rem .6rem;
+.filter-button, .tag {
+    padding: .3rem .6rem;
     border: none;
-    border-radius: 5px;
-    margin: 0.3rem 0.3rem 0.3rem 0;
-    background-color: rgb(228, 228, 228);
+    border-radius: 3px;
+    margin: 0.3rem 0.6rem 0.3rem 0;
+    background-color: rgb(235, 235, 235);
     font-family: monospace;
-    font-size: 0.8rem;
+    font-size: 0.8rem;   
+}
+
+.tag {
+    background-color: rgba(194, 194, 194, 0.5);
 }
 
 .filter-button-active {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(194, 194, 194);
 }
 
 .filter-button:hover {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(194, 194, 194);
 }
 
 .projects-container {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-container {
-    padding: 1rem;
-    margin-bottom: 2rem;
-    background-color: rgb(238, 238, 238);
+    padding: 1rem 1rem 1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
+    
 }
 
-.project-details-container {
-    padding-top: 1rem;
+.project-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
+
+.project-subtitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+.project-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container-left {
+    margin-bottom: 1rem;
+  }
 
 .project-image-container img {
   width: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba( 0,0,0,0.1);
 }
 
 .tag-list {
@@ -1173,9 +1208,112 @@ footer {
 .read-more-btn {
     display: flex;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0 var(--shadow-color-1);
+    margin-left: auto;
+    width: auto;
+    background-color: rgb(82, 82, 82);
+    color: white;
 }
 
 
+@media screen and (min-width: 768px) {
+  
+.page-title {
+    font-size: 3.5rem;
+    margin: 2rem 0 0.5rem;
+}
 
+.filter-button, .read-more-btn {
+    padding: .4rem .7rem;
+    font-size: 1rem;
+}
+
+  .projects-container {
+    padding: 1rem 0;
+  }
+
+    .project-container {
+    padding: 2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+ 
+    .project-content-container {
+    flex-direction: row;
+  }
+
+  .project-title-container {
+    margin-bottom: 1.75rem;
+}
+
+  .project-container-left {
+    flex: 1;
+    margin: 0;
+    max-width: 450px;
+  }
+
+  .project-container-right {
+    flex: 1;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-details-text {
+    padding: 0 0 1rem 0;
+}
+
+.project-details-text p {
+    -webkit-line-clamp: 6;
+}
+
+.button-group {
+    margin-left: auto;
+    width: 100%;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+    .project-details-text p {
+        -webkit-line-clamp: 8;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    
+    .page-container {
+        padding: 2rem 0;
+    }
+
+    .page-title {
+        font-size: 4.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1600px) {
+
+    .page-title {
+        font-size: 5.5rem;
+    }
+
+}
+
+/* ----------- Project Page ---------- */
+
+
+.project-video-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.key-learnings-list li {
+    list-style-type: square;
+    margin-left: 1rem;
+}
