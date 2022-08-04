@@ -26,9 +26,6 @@
               <a href="./projects.html" class="nav-link">Projects</a>
             </li>
             <li class="main-nav-item">
-              <a href="./skills.html" class="nav-link">Skills</a>
-            </li>
-            <li class="main-nav-item">
               <a href="./blog.html" class="nav-link">Blog</a>
             </li>
             <li class="main-nav-item">
@@ -41,7 +38,6 @@
               <span class="bar"></span>
             </div>
         </nav>
-        
       </header>
       <div class="dark-mode is-visible">
         <div class="dark-mode-container">
@@ -57,18 +53,51 @@
             <h1 class="page-title">Projects</h1>
             <div class="filter-buttons-container">
               <button class="filter-button filter-button-active">Show All</button>
-              <button class="filter-button">HTML / CSS</button>
+              <button class="filter-button css-filter">HTML / CSS</button>
               <button class="filter-button">Javascript</button>
               <button class="filter-button">React</button>
               <button class="filter-button">Node.js</button>
               <button class="filter-button">Sass</button>
             </div>
+
+            <div class="project-intro-text">
+              <p>Here you will find all of my current projects, which I will add to these over time as I learn and grow as a developer.  Please explore the projects that you like the look/sound of.  For each project, you can view it live, take a peek at the GitHub repository, or read more about the project itself by clicking the 'Project Details'.</p>
+              <br><p>NB: If you want to focus on a specific tech, use the fliter buttons above.</p><br>
+            </div>
             
-            <span>Filtered projects(<span class="filtered-number">23</span>):</span>
+            <span>Filtered projects(<span class="filtered-number">3</span>):</span>
             
             <div class="projects-container">
 
-              <div class="project-container filterDiv html">
+              <div class="project-container filterDiv css" data-key="js">
+                <div class="project-title-container">
+                  <h3>The Portfolio</h3>
+                  <div class="tag-container">
+                    <ul class="tag-list">
+                      <li class="tag">html / css</li>
+                      <li class="tag">javascript</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-content-container">
+                  <div class="project-container-left">
+                    <div class="project-image-container">
+                      <img src="./Images/Portfolio Image.png" alt="">
+                    </div>
+                    
+                  </div>
+                    <div class="button-group"> 
+                      <button class="project-button" >
+                        <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
+                      </button>
+                      <button class="github-button" >
+                        <a href="./project-page.html">Project Details</a>
+                      </button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="project-container filterDiv css js">
                 <div class="project-title-container">
                   <h3>The Portfolio</h3>
                   <div class="tag-container">
@@ -97,36 +126,7 @@
                 </div>
               </div>
 
-              <div class="project-container filterDiv html">
-                <div class="project-title-container">
-                  <h3>The Portfolio</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/Portfolio Image.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="./project-page.html">Project Details</a>
-                      </button>
-                    </div>
-                  
-                </div>
-              </div>
-
-              <div class="project-container filterDiv html">
+              <div class="project-container filterDiv html sass">
                 <div class="project-title-container">
                   <h3>The Portfolio</h3>
                   <div class="tag-container">
@@ -187,15 +187,16 @@
             </div>
       </main>
       <footer>
+        <div class="links-items-container">
           <div class="links-items">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">View CV</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="./about.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./skills.html">View CV</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
           </div>
-        
+        </div>
         <p>&copy; <span id="date"></span>
           <span class="highlight">My Portfolio</span> Built by Matt Willis
         </p>

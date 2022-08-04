@@ -1,3 +1,5 @@
+/* --------  NAVBAR HAMBURGER MENU ----------*/
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".main-nav-menu");
 
@@ -146,6 +148,36 @@ const throttle = (callback, time) => {
 window.addEventListener("scroll", () => { 
   throttle(handleScrollAnimation, 250);
 });
+
+
+
+/* --------- FILTER PROJECTS BY TECH ---------- */
+
+
+
+const divs = document.querySelectorAll('.filterDiv');
+const filterButtons = document.querySelectorAll('.filter-button');
+const jsDivs = document.querySelectorAll(`[data-key="js"]`);
+const cssDivs = document.querySelectorAll(`[data-key="js"]`);
+
+divs.forEach(div => div.classList.add('show'));
+
+function filterSelection() {
+  divsArray = Array.from(divs);
+  divsArray.forEach(div => {
+    if (div.dataset.key !== 'js') {
+      div.classList.remove('show')
+    }
+    
+  })
+  
+}
+
+
+
+
+
+filterButtons.forEach(filterButton => filterButton.addEventListener('click', filterSelection));
 
 // footer date
 

@@ -25,6 +25,7 @@
     --opacity-filter: rgba(255, 255, 255, 0.7);
     --section-border-top: rgba(39, 40, 43, 0.05);
     --button-1: rgb(39, 40, 43);
+    --polygon-color: rgb(207,207,207);
 
 }
 
@@ -39,7 +40,7 @@
     --shadow-color-1: rgb(111, 221, 21);
     --border-top-1: rgb(111, 221, 21);;
     --icon-color: rgb(111, 221, 21);
-    --logo-container-background-color: rgba(124, 124, 124, 0.15);
+    --logo-container-background-color: rgba(163, 163, 163, 0.15);
     --portfolio-btn-color: rgb(111, 221, 21);;
     --portfolio-btn-span: rgb(39, 40, 43);
     --project-border: inset 0 0 7px rgba( 0,0,0,0.08);;
@@ -47,6 +48,7 @@
     --opacity-filter: rgba(39, 40, 43, 0.7);
     --section-border-top: rgba(111, 221, 21, 0.2);
     --button-1: rgba(194, 194, 194, 0.5);
+    --polygon-color: rgba(124, 124, 124, 0.15);
 }
 
 body {
@@ -128,10 +130,17 @@ button:hover {
     font-family: monospace;
     border: none;
     margin: 0 auto;
-    height: 35px;
+    height: 50px;
     padding: 0 0.5rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .view-all-btn {
+        height: 55px;
+        margin-top: 1.5rem; 
+    }
 }
 
 
@@ -265,10 +274,6 @@ main {
 
 @media screen and (min-width: 900px) {
 
-    #Intro {
-        min-height: calc(100vh - 70px);
-    }
-    
     .main-nav-menu {
         display: flex;
         flex-direction: row;
@@ -316,6 +321,7 @@ main {
     padding: 10px 20px; 
     background-color: var(--background-color);
     margin: 0 auto;
+    
 }
 
 .is-hidden {
@@ -397,7 +403,7 @@ input:checked+.slider:before {
     }
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
     .dark-mode-container {
         padding: 1.3rem 0;
     }
@@ -440,8 +446,6 @@ input:checked+.slider:before {
 
 .header-img {
     width: 100%;
-    -o-object-fit: cover; 
-    object-fit: cover;
     filter:contrast(130%);
 }
 
@@ -528,7 +532,8 @@ input:checked+.slider:before {
     width: 100%;
     margin: 0 auto;
     font-size: 1rem;
-    padding: 0 2rem 2.5rem 2rem ;
+    padding: 0 2rem 2.5rem 2rem;
+    max-width: 600px;
 }
 
 @media screen and (min-width: 768px) {
@@ -633,6 +638,10 @@ input:checked+.slider:before {
     flex-direction: column;
 }
 
+#project-4 {
+    display: none;
+}
+
 .project-group-item {
     max-width: 400px;
     margin: 1.5rem auto;
@@ -697,12 +706,24 @@ input:checked+.slider:before {
 
 @media screen and (min-width: 768px) {
     
+    #skills {
+        margin-top: 8rem;
+    }
+
+    #Contact {
+        margin-top: 5rem;
+    }
+
     #project-group-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
         width: 100%; 
         padding: 0 1rem;
+    }
+
+    #project-4 {
+        display: block;  
     }
 
     .project-group-item {
@@ -716,12 +737,20 @@ input:checked+.slider:before {
       .scrolled.fade-in-bottom:nth-child(2n) {
         animation: fade-in-bottom .8s ease-in-out both;
       }
+
+      #projects, #skills, #Contact {
+        padding: 2rem 0 4rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
 
-    #projects, #skills, #Contact {
-        padding: 2rem 0 4rem;
+    #skills {
+        margin-top: 10rem;
+    }
+    
+    #Contact {
+        margin-top: 6rem;
     }
 
     .section-header-text {
@@ -880,14 +909,13 @@ input:checked+.slider:before {
 
     .skills-shape {
         position: absolute;
-        clip-path: polygon();
-        background-color: rgb(207, 207, 207);
+        background-color: var(--polygon-color);
         z-index: -1;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
-        clip-path: polygon(5% 0%, 96% 10%, 79% 83%, 15% 92%);
+        clip-path: polygon(3% 0%, 97% 10%, 85% 80%, 15% 87%);
     }
     
     .skills-container {
@@ -902,6 +930,10 @@ input:checked+.slider:before {
 
     .skills-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill span {
+        font-size: 1rem;
     }
 }
 
@@ -1129,6 +1161,125 @@ footer {
 
 
 
+.blog-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.blog-page-main-image {
+    width: 100%;
+}
+
+.blog-image-container {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.blog-title-container {
+    position: absolute;
+    background-color: rgba(0,0,0, 0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    width: 100%;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-title-container h1 {
+    margin: 0;
+    font-size: clamp(2rem, 7vw, 4rem);
+}
+
+.blog-content-container {
+    padding: 1rem;
+}
+
+.blog-info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.inline-blog-image {
+    width: 40%;
+    float: left;
+    margin-right: 2rem; 
+}
+
+.blog-info-img-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 1px solid white;
+}
+
+.blog-info-img {
+    width: 100%;
+    filter:contrast(130%);
+}
+
+.blog-text-container p {
+    margin-bottom: 2rem;
+}
+
+.blog-info-text p {
+    font-size: 0.9rem;
+}
+
+.first-line::first-letter {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.blog-text-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .blog-image-container {
+        max-height: 400px;
+    }
+
+    .blog-info-img-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .blog-info-text p {
+        font-size: 1.2rem;
+    }
+
+    .blog-text-container p {
+        font-size: 1.2rem;
+    }
+
+    .blog-text-image {
+        width: 90%;
+        margin: 1rem auto 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-content-container {
+        padding: 1.5rem 0;
+    }
+}
+
+
+
+
 
 
 
@@ -1166,12 +1317,12 @@ footer {
 }
 
 .tag {
-    background-color: rgba(194, 194, 194, 0.5);
+    background-color: rgb(218, 218, 218);
     font-size: 0.7rem;
 }
 
 .filter-button-active {
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(214, 214, 214);
 }
 
 .filter-button:hover {
@@ -1179,9 +1330,20 @@ footer {
 }
 
 .projects-container {
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+
+
+/* by default all project cards will be hidden */
+.filterDiv {
+    display: none;
+}
+
+/* the show class will be added to filtered elements */
+.show {
+    display: block;
 }
 
 .project-container {
@@ -1254,7 +1416,6 @@ footer {
     .projects-container {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 1rem 3rem;
         justify-content: space-between;
     }
 
