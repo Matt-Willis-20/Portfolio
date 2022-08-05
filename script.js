@@ -154,30 +154,42 @@ window.addEventListener("scroll", () => {
 /* --------- FILTER PROJECTS BY TECH ---------- */
 
 
-
 const divs = document.querySelectorAll('.filterDiv');
 const filterButtons = document.querySelectorAll('.filter-button');
-const jsDivs = document.querySelectorAll(`[data-key="js"]`);
-const cssDivs = document.querySelectorAll(`[data-key="js"]`);
+const filterNumber = document.querySelector('.filtered-number');
 
-divs.forEach(div => div.classList.add('show'));
+filterNumber.innerHTML = divs.length;
 
-function filterSelection() {
-  divsArray = Array.from(divs);
-  divsArray.forEach(div => {
-    if (div.dataset.key !== 'js') {
-      div.classList.remove('show')
+function filterSelection(e) {
+  let targetBtn = e.target.textContent.toLowerCase();
+  targetBtn === 'all' ?
+    divs.forEach(div => {
+      div.classList.contains('hide') ?
+        div.classList.remove('hide') : null
+    }) :
+    divs.forEach(div => {
+      div.classList.contains(targetBtn) ?
+      div.classList.remove('hide') : div.classList.add('hide')      
+      })  
+      
+      let hiddenDivs = document.querySelectorAll('.hide');
+      NumberOfHiddenDivs = hiddenDivs.length;
+      let visibleDivs = divs.length - NumberOfHiddenDivs;
+      filterNumber.innerHTML = visibleDivs;
     }
-    
-  })
-  
-}
 
-
-
+  function changeColor(e) {
+      filterButtons.forEach(filterButton => {filterButton.classList.remove('active-filter')})
+      e.target.classList.add('active-filter');
+    }
 
 
 filterButtons.forEach(filterButton => filterButton.addEventListener('click', filterSelection));
+filterButtons.forEach(filterButton => filterButton.addEventListener('click', changeColor));
+
+
+
+
 
 // footer date
 

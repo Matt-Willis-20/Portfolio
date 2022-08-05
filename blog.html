@@ -3,7 +3,7 @@
     <head>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <title>Matt Willis - Blog</title>
+      <title>Matt Willis Blog</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
@@ -38,7 +38,6 @@
               <span class="bar"></span>
             </div>
         </nav>
-        
       </header>
       <div class="dark-mode is-visible">
         <div class="dark-mode-container">
@@ -50,17 +49,48 @@
         </div>
       </div>
       <main>
-        <section class="blog-page">
-            <div class="under-construction">
-               <p>Page under construction!</p>
+        <section class="page-container">
+            <h1 class="page-title">The Blog</h1>
+            <div class="filter-buttons-container">
+              <span>Filter:</span>
+              <button class="filter-button active-filter">All</button>
+              <button class="filter-button">Javascript</button>
+              <button class="filter-button">React</button>
+              <button class="filter-button">Responsive Design</button>
+              <button class="filter-button">Teamwork</button>
             </div>
-        </section> <!-- closing section -->
-        <section>
-        </section> <!------- closing section ----------->
-        <section>
-        </section>  <!-- closing section -->
-        <section >
-        </section>  <!-- closing contact section -->
+            
+            <span>Filtered projects(<span class="filtered-number">3</span>):</span>
+            
+            <div class="projects-container">
+
+              <div class="project-container filterDiv teamwork">
+                <div class="project-title-container">
+                  <h3>Why you should learn to code</h3>
+                  <div class="tag-container">
+                    <ul class="tag-list">
+                      <li class="tag">Teamwork</li>
+                      <li class="tag">Responsive Design</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="project-content-container">
+                  <div class="project-container-left">
+                    <div class="project-image-container">
+                      <img src="./Images/blog-article-image-1.jpg" alt="">
+                    </div>
+                    
+                  </div>
+                  
+                    <div class="button-group"> 
+                      <button class="project-button" >
+                        <p><a href="./blog-page.html">Read Article</p></a>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
       </main>
       <footer>
         <div class="links-items-container">
