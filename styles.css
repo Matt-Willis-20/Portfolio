@@ -1161,24 +1161,19 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-    .about-me-intro {
-        flex-direction: row;
-    }
+    
 
-    .about-me-right {
+    /*.about-me-right {
         padding-right: 4rem;
     }
 
     .about-me-right a {
         margin-left: 0;
     }
+    */
 
     .about-me-right p {
         font-size: 1.2rem;
-    }
-
-    .about-img-container {
-        
     }
 
 }
@@ -1242,7 +1237,7 @@ footer {
   .wrapper .center-line{
     position: absolute;
     height: 100%;
-    width: 4px;
+    width: 3px;
     background: var(--text-color);
     left: 15px;
     top: 20px;
@@ -1341,6 +1336,12 @@ footer {
   }
   .row section .bottom a:hover{
     transform: scale(1.04);
+  }
+
+  @media screen and (min-width: 768px) {
+    .wrapper {
+        padding-right: 1.5rem;
+    }
   }
 
  
