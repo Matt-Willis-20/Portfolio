@@ -949,10 +949,10 @@ input:checked+.slider:before {
 
 .contact-info {
     width: 100%;
-    
-}
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
 
 .contact-text {
     padding: 1rem 0;
@@ -992,40 +992,7 @@ input:checked+.slider:before {
     font-size: 1.4rem;
 }
 
-.form {
-    max-width: var(--fixed-width);
-  }
 
-.form-label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  font-family: monospace;
-}
-  
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  border-radius: 5px;
-  background-color: rgb(241, 241, 241);
-  border: 1px solid #919191 ;
-}
-
-.form-row {
-  margin-bottom: 1rem;
-}
-
-.form-textarea {
-  height: 8rem;
-}
-  
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-}
   
 .scrolled.fade-in-right {
   animation: fade-in-right .5s ease-in-out both;
@@ -1061,14 +1028,6 @@ input:checked+.slider:before {
       gap: 3rem;
       align-items: center;
     }
-
-    .contact-left, .contact-right {
-        padding: 1rem 0;
-    }
-
-    .social-media-container {
-        padding-top: 1.5rem;
-    }
   }
 
 @media screen and (min-width: 1200px) {
@@ -1076,10 +1035,6 @@ input:checked+.slider:before {
     .contact-container {
         padding: 3rem 0;
         gap: 4rem;
-    }
-
-    .contact-left, .contact-right {
-        padding: 1rem 0;
     }
   }
 
@@ -1136,11 +1091,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.about-me-intro h1 {
+.about-me-hero .page-title {
+    display: none;
+}
+
+.mobile-about-title {
     font-size: clamp(1rem, 12vw, 3.5rem);
+    color: var(--text-color);
 }
 
 .about-img-container {
@@ -1148,7 +1109,7 @@ footer {
 }
 
 .about-me-text {
-    margin: 1rem 0 2rem;
+    margin-bottom: 3rem;
     padding: 0 0.5rem;
     max-width: 600px;
 }
@@ -1161,26 +1122,52 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-    
 
-    /*.about-me-right {
-        padding-right: 4rem;
+    .about-me-page {
+        padding: 2rem 1.5rem;
     }
+    
+    .about-me-hero .page-title {
+        display: block;
+    }
+
+    .about-me-intro {
+        flex-direction: row;
+    }
+    
+    .mobile-about-title {
+        display: none;
+    }
+
+.about-img-container {
+    order: 1;
+    padding: 0;
+}
+
+
+.about-me-text {
+    max-width: 800px;
+}
+
+
 
     .about-me-right a {
         margin-left: 0;
     }
-    */
+    
+    
+    
+}
 
+@media screen and (min-width: 1200px) {
     .about-me-right p {
         font-size: 1.2rem;
     }
-
 }
 
 
 .skills {
-    margin: 3rem 0 2rem;
+    margin: 5rem 0 4rem;
     position: relative;
     padding: 2rem 0;
 }
@@ -1193,7 +1180,7 @@ footer {
     height: 100%;
     left: 0;
     top: 0;
-    clip-path: polygon(3% 4%, 93% 15%, 85% 83%, 15% 88%);
+    clip-path: polygon(8% 2%, 92% 15%, 87% 86%, 15% 93%);
 }
 
 .about-skills-list {
@@ -1207,31 +1194,20 @@ footer {
     justify-content: center;
 }
 
-.under-construction {
-    background-image: url('./Images/hello-i-m-nik-umFPf301OjQ-unsplash.jpg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
+
+@media screen and (min-width: 768px) {
+    .skills {
+        margin: 6rem 0 4rem;
+    }
 }
 
-.under-construction p {
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.8);
-    text-transform: uppercase;
 
-}
 
 .wrapper{
     max-width: var(--max-width);
     margin-bottom: 2rem;
     position: relative;
+    padding-right: 0.5rem;
   }
 
   .wrapper .center-line{
@@ -1321,6 +1297,12 @@ footer {
     font-size: 1.1rem;
     font-weight: 600;
   }
+
+  .timeline-item-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+  }
+
   .row section p{
     margin: 10px 0 17px 0;
   }
@@ -1668,4 +1650,31 @@ footer {
 .key-learnings-list li {
     list-style-type: square;
     margin-left: 1rem;
+}
+
+
+
+
+
+
+
+.under-construction {
+    background-image: url('./Images/hello-i-m-nik-umFPf301OjQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.under-construction p {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+
 }
