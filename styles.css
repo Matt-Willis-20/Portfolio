@@ -1108,6 +1108,8 @@ footer {
     padding: 1rem 0 0.5rem;
 }
 
+
+
 .about-me-text {
     margin-bottom: 3rem;
     padding: 0 0.5rem;
@@ -1122,6 +1124,19 @@ footer {
 
 
 @media screen and (min-width: 768px) {
+    .about-img-container .header-img-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .about-img-container {
+        order: 1;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
 
     .about-me-page {
         padding: 2rem 1.5rem;
@@ -1143,7 +1158,6 @@ footer {
     order: 1;
     padding: 0;
 }
-
 
 .about-me-text {
     max-width: 800px;
