@@ -17,7 +17,7 @@
     --border-top-1: rgb(41, 41, 34);
     --icon-color: rgb(66, 66, 66);
     --max-width: 1200px;
-    --logo-container-background-color: rgb(235, 235, 235);
+    --logo-container-background-color: rgb(224, 224, 224);
     --portfolio-btn-color: rgb(39, 40, 43); 
     --portfolio-btn-span: rgb(255, 255, 255);
     --project-border: none;
@@ -130,7 +130,7 @@ button:hover {
     font-family: monospace;
     border: none;
     margin: 0 auto;
-    height: 50px;
+    height: 45px;
     padding: 0 0.5rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
@@ -138,8 +138,8 @@ button:hover {
 
 @media screen and (min-width: 768px) {
     .view-all-btn {
-        height: 55px;
-        margin-top: 1.5rem; 
+        height: 50px;
+        margin-top: 0.5rem; 
     }
 }
 
@@ -248,11 +248,6 @@ main {
     header {
         height: 70px;
     }
-    
-    #Intro {
-        min-height: calc(100vh - 70px);
-        display: flex;
-   }
 
     main, .main-nav-menu, .dark-mode {
         top: 70px;
@@ -301,6 +296,8 @@ main {
     .main-nav-item {
         width: 120px;
     }
+
+
 }
 
 .dark-mode {
@@ -407,14 +404,16 @@ input:checked+.slider:before {
     .dark-mode-container {
         padding: 1.3rem 0;
     }
+
 }
  
 
 /* ---------------- INTRO SECTION ------------ */
 
-#intro {
+#Intro {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #hero-container {
@@ -422,7 +421,7 @@ input:checked+.slider:before {
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 4rem;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .intro-image-container {
@@ -536,10 +535,44 @@ input:checked+.slider:before {
     max-width: 600px;
 }
 
+
 @media screen and (min-width: 768px) {
     #hero-container {
-        grid-template-columns: 1fr 200px;
         padding: 4rem 0;
+        gap: 2.5rem;
+    }
+
+    #Intro {
+        min-height: calc(100vh - 70px);
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .intro-text {
+        font-size: 1.3rem;
+    }
+    #hero-container {
+        gap: 3.5rem;
+    }
+
+    .header-img-container {
+    height: 400px;
+    width: 400px;
+}
+
+.intro-text {
+    max-width: 700px;
+}
+
+}
+
+@media screen and (min-width: 920px) {
+    #hero-container {
+        grid-template-columns: 1fr 210px;
         max-width: 80%;
         margin: 0 auto;
     }
@@ -555,8 +588,8 @@ input:checked+.slider:before {
     }
 
     .header-img-container {
-        height: 200px;
-        width: 200px;
+        height: 210px;
+        width: 210px;
         border: 4px solid white;
     }
 
@@ -573,27 +606,11 @@ input:checked+.slider:before {
 
     .intro-text {         
         margin: 0;
-        padding: 0 2rem 0 0;
+        padding: 0 4rem 0 0;
     }
 
     .portfolio-button span {
         font-size: clamp(0.8rem, 0.5vw, 1.1rem);
-    }
-}
-
-@media screen and (min-width: 900px) {
-   
-    #hero-container {
-        grid-template-columns: 1fr 210px;
-    } 
-    
-    .header-img-container {
-        height: 210px;
-        width: 210px;
-    }
-
-    .intro-text {
-        padding: 0 4rem 0 0;
     }
 }
 
@@ -619,9 +636,11 @@ input:checked+.slider:before {
         height: 300px;
         width: 300px;
     }
+
     .intro-text {
         font-size: 1.1rem;
         padding: 0 6rem 0 0;
+        max-width: 800px;
     }
 }
 
@@ -681,6 +700,7 @@ input:checked+.slider:before {
 .section-header-text {
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    
 }
 
 .project-number {
@@ -714,14 +734,6 @@ input:checked+.slider:before {
         margin-top: 5rem;
     }
 
-    #project-group-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:center;
-        width: 100%; 
-        padding: 0 1rem;
-    }
-
     #project-4 {
         display: block;  
     }
@@ -738,7 +750,7 @@ input:checked+.slider:before {
         animation: fade-in-bottom .8s ease-in-out both;
       }
 
-      #projects, #skills, #Contact {
+      #skills, #Contact {
         padding: 2rem 0 4rem;
     }
 }
@@ -759,23 +771,6 @@ input:checked+.slider:before {
         font-size: 3rem;
     }
 
-    #project-group-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        padding-top: 2rem;
-        margin: 0 auto;
-    }
-
-    .project-group-item {
-        margin-bottom: 4rem;
-        padding: 2rem;
-        max-width: 29%;
-    }
-
-    .project-group-item:last-child {
-        display: none;
-    }
 }
 
 
@@ -843,11 +838,12 @@ input:checked+.slider:before {
 
 .skills-container h3 {
     color: var(--text-color);
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .skills-text {
     padding-top: 1rem;
+    position: relative;
 }
 
 .skills-list {
@@ -934,6 +930,10 @@ input:checked+.slider:before {
 
     .skill span {
         font-size: 1rem;
+    }
+
+    .tech-skills-container {
+        padding: 0 2rem;
     }
 }
 
@@ -1127,6 +1127,7 @@ footer {
     .about-img-container .header-img-container {
         width: 350px;
         height: 350px;
+        margin-bottom: 3rem;
     }
 
     .about-img-container {
@@ -1494,11 +1495,16 @@ footer {
     padding-bottom: 2rem;
 }
 
+.filter-buttons-container span {
+    margin-right: 0.5rem;
+    display: none;
+}
+
 .filter-button, .tag {
     padding: .3rem .6rem;
     border: none;
     border-radius: 3px;
-    margin: 0.3rem 0 0.3rem 0.6rem;
+    margin: 0.3rem 0.6rem 0.3rem 0rem;
     background-color: rgb(235, 235, 235);
     font-family: monospace;
     font-size: 0.8rem;   
@@ -1520,6 +1526,7 @@ footer {
 .projects-container {
     display: flex;
     flex-direction: column;
+    padding-top: 1.5rem;
 }
 
 
@@ -1605,6 +1612,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-top: 2rem;
     }
 
     .project-container {
@@ -1614,7 +1622,11 @@ footer {
     }
 
     h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    }
+
+    .filter-buttons-container span {
+        display: block;
     }
 
   .project-title-container {
@@ -1639,8 +1651,18 @@ footer {
         padding: 2rem 0;
     }
 
+    
+
+    .project-container {
+        max-width: 30%;
+    }
+
     .page-title {
         font-size: 4.5rem;
+    }
+
+    #project-4 {
+        display: none;
     }
 }
 
