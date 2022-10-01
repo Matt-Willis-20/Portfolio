@@ -1,230 +1,320 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <title>Matt Willis - Projects</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body>
-      <header>
-        <nav class="main-nav">
-          <a href="./index.html" class="logo">Matt Willis</a>
-          <ul class="main-nav-menu">
-            <li class="main-nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./about.html" class="nav-link">About</a>
-            </li>
-            <li class="main-nav-item current-page">
-              <a href="./projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-        </nav>
-      </header>
-      <div class="dark-mode is-visible">
-        <div class="dark-mode-container">
-          <label class="theme-slider" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="round slider"></div>
-          </label>
-          <span class="dm-label">DARK MODE</span>
-        </div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Matt Willis - Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap"
+    rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="./index.html" class="logo">Matt Willis</a>
+      <ul class="main-nav-menu">
+        <li class="main-nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="main-nav-item current-page">
+          <a href="./projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <main>
-        <section class="page-container">
-            <h1 class="page-title">Projects</h1>
-            <div class="filter-buttons-container">
-              <span>Filter:</span>
-              <button class="filter-button active-filter">All</button>
-              <button class="filter-button">Javascript</button>
-              <button class="filter-button">React</button>
-              <button class="filter-button">Sass</button>
+    </nav>
+  </header>
+  <div class="dark-mode is-visible">
+    <div class="dark-mode-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="round slider"></div>
+      </label>
+      <span class="dm-label">DARK MODE</span>
+    </div>
+  </div>
+  <main>
+    <section class="page-container">
+      <h1 class="page-title">Projects</h1>
+      <div class="filter-buttons-container">
+        <span>Filter:</span>
+        <button class="filter-button active-filter">All</button>
+        <button class="filter-button">Javascript</button>
+        <button class="filter-button">React</button>
+        <button class="filter-button">Sass</button>
+        <button class="filter-button">Bootstrap</button>
+      </div>
+
+      <span class="filter-text">Filtered projects(<span class="filtered-number">3</span>):</span>
+
+      <div class="projects-container">
+
+        <div class="project-container filterDiv javascript">
+          <div class="project-title-container">
+            <h3>The Portfolio</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+              </ul>
             </div>
-            
-            <span class="filter-text">Filtered projects(<span class="filtered-number">3</span>):</span>
-            
-            <div class="projects-container">
-
-              <div class="project-container filterDiv javascript">
-                <div class="project-title-container">
-                  <h3>The Portfolio</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/Portfolio Image.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="./project-page.html">Project Details</a>
-                      </button>
-                    </div>
-                </div>
-              </div>
-
-              <div class="project-container filterDiv javascript sass react">
-                <div class="project-title-container">
-                  <h3>The Other Portfolio</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/Portfolio 2 Image.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://the-other-portfolio.netlify.app/">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="https://github.com/Matt-Willis-20/the-other-portfolio">Project Details</a>
-                      </button>
-                    </div>
-                  
-                </div>
-              </div>
-
-              <div class="project-container filterDiv javascript">
-                <div class="project-title-container">
-                  <h3>Website Redesign</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/HRS screenshot.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://hrs-website-redesign.netlify.app/">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="https://github.com/Matt-Willis-20/HRS-website-redesign">Project Details</a>
-                      </button>
-                    </div>
-                  
-                </div>
-              </div>
-
-              <div class="project-container filterDiv">
-                <div class="project-title-container">
-                  <h3>Raiders' Club Website</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/Raiders.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://wigmore-raiders.netlify.app/">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="https://github.com/Matt-Willis-20/Wigmore-Raiders">Project Details</a>
-                      </button>
-                    </div>
-                  
-                </div>
-              </div>
-
-              <div class="project-container filterDiv javascript">
-                <div class="project-title-container">
-                  <h3>Simply Recipes</h3>
-                  <div class="tag-container">
-                    <ul class="tag-list">
-                      <li class="tag">html / css</li>
-                      <li class="tag">javascript</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="project-content-container">
-                  <div class="project-container-left">
-                    <div class="project-image-container">
-                      <img src="./Images/Recipes.png" alt="">
-                    </div>
-                    
-                  </div>
-                    <div class="button-group"> 
-                      <button class="project-button" >
-                        <p><a href="https://new-simply-recipes.netlify.app/index.html">Live Project</p></a>
-                      </button>
-                      <button class="github-button" >
-                        <a href="https://github.com/Matt-Willis-20/Simply-Recipes">Project Details</a>
-                      </button>
-                    </div>
-                  
-                </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/Portfolio Image.png" alt="">
               </div>
 
             </div>
-      </main>
-      <footer>
-        <div class="links-items-container">
-          <div class="links-items">
-            <a href="#">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./skills.html">View CV</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./contact.html">Contact</a>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="./project-page.html">Project Details</a>
+              </button>
+            </div>
           </div>
         </div>
-        <p>&copy; <span id="date"></span>
-          <span class="highlight">My Portfolio</span> Built by Matt Willis
-        </p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
+
+        <div class="project-container filterDiv javascript bootstrap">
+          <div class="project-title-container">
+            <h3>MY-NFT</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+                <li class="tag">bootstrap</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/MYNFT.png" alt="MY-NFT">
+              </div>
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://matt-willis-my-nft.netlify.app">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/MY-NFT">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container filterDiv javascript react">
+          <div class="project-title-container">
+            <h3>Finsweet</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+                <li class="tag">react</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/finsweet.png" alt="">
+              </div>
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://matt-willis-finsweet.netlify.app">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/finsweet">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container filterDiv javascript react">
+          <div class="project-title-container">
+            <h3>GTP3</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+                <li class="tag">react</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/GTP3.png" alt="">
+              </div>
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://matt-willis-gtp3.netlify.app">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/gpt3_new">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container filterDiv javascript sass react">
+          <div class="project-title-container">
+            <h3>The Other Portfolio</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/Portfolio 2 Image.png" alt="">
+              </div>
+
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://the-other-portfolio.netlify.app/">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/the-other-portfolio">Project Details</a>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="project-container filterDiv javascript">
+          <div class="project-title-container">
+            <h3>Website Redesign</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/HRS screenshot.png" alt="">
+              </div>
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://hrs-website-redesign.netlify.app/">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/HRS-website-redesign">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container filterDiv">
+          <div class="project-title-container">
+            <h3>Raiders' Club Website</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/Raiders.png" alt="">
+              </div>
+
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://wigmore-raiders.netlify.app/">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/Wigmore-Raiders">Project Details</a>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="project-container filterDiv javascript">
+          <div class="project-title-container">
+            <h3>Simply Recipes</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">html / css</li>
+                <li class="tag">javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-container-left">
+              <div class="project-image-container">
+                <img src="./Images/Recipes.png" alt="">
+              </div>
+
+            </div>
+            <div class="button-group">
+              <button class="project-button">
+                <p><a href="https://new-simply-recipes.netlify.app/index.html">Live Project</p></a>
+              </button>
+              <button class="github-button">
+                <a href="https://github.com/Matt-Willis-20/Simply-Recipes">Project Details</a>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </main>
+  <footer>
+    <div class="links-items-container">
+      <div class="links-items">
+        <a href="#">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">View CV</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <p>&copy; <span id="date"></span>
+      <span class="highlight">My Portfolio</span> Built by Matt Willis
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
 </DOCTYPE>
