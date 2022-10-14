@@ -1,117 +1,295 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <title>Why you should learn to code </title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body>
-      <header>
-        <nav class="main-nav">
-          <a href="./index.html" class="logo">Matt Willis</a>
-          <ul class="main-nav-menu">
-            <li class="main-nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./about.html" class="nav-link">About</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-        </nav>
-        
-      </header>
-      <div class="dark-mode is-visible">
-        <div class="dark-mode-container">
-          <label class="theme-slider" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="round slider"></div>
-          </label>
-          <span class="dm-label">DARK MODE</span>
-        </div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Parachute into Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="./index.html" class="logo">Matt Willis</a>
+      <ul class="main-nav-menu">
+        <li class="main-nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <main>
-            <section class="blog-container">
-                <div class="blog-image-container">
-                    <img class="blog-page-main-image" src="./Images/Blog1.jpg" alt="">
-                    <div class="blog-title-container">
-                        <h1 class="blog-page-title">Why you should learn to code</h1>
-                        <div class="tag-container">
-                            <ul class="tag-list">
-                                <li class="tag">html / css</li>
-                                <li class="tag">javascript</li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
-                <div class="blog-content-container">
-                    <div class="blog-info-container">
-                        <div class="blog-info-img-container">
-                            <img class="blog-info-img" src="./Images/Profile Pic1.png" alt="">
-                        </div>
-                        <div class="blog-info-text">
-                            <p><strong>Written By:</strong> Matt Willis</p>
-                            <p><strong>Date:</strong> 23rd July 2022</p>
-                        </div>
-                    </div>
-                    <div class="blog-text-container">
-                        <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum consequuntur corrupti, quaerat maiores culpa ab facilis, nihil dolore, quam excepturi deserunt ipsam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste facilis modi molestias totam sed optio dolores aliquid quia enim quam repellat unde, ullam deleniti, beatae aut, et excepturi quae voluptas laborum non. Voluptas sit voluptatum inventore nam dolore vel corporis neque impedit perferendis accusamus ducimus, eum minima ad odit quod nulla esse commodi laboriosam enim quidem ipsum repellat quis?</p>    
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus velit quam temporibus vitae nisi praesentium debitis sit nobis, incidunt voluptatem cupiditate beatae commodi quibusdam cum perspiciatis in ratione omnis minus vel numquam, unde magnam harum. Repellendus id ducimus nemo numquam harum! Aut, excepturi?</p>
-                        <img class="blog-text-image" src="./Images/Raiders.png" alt="">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, sequi facilis. Adipisci porro minima, id ipsam cumque neque, similique tempore nesciunt pariatur nostrum reiciendis cum? Dignissimos porro at quasi molestias aperiam, culpa quo quos.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ad dolor voluptas rem nulla amet, provident quo. Repellendus eligendi nisi distinctio eveniet consequuntur labore architecto nulla dolores, ipsa, voluptas odio cupiditate cum dolor quibusdam corrupti, natus deleniti inventore. Voluptatem, eaque! Repellendus incidunt iure impedit assumenda.</p>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus provident ratione corporis at reprehenderit quo perspiciatis dignissimos a, labore eveniet. Molestias non totam magnam facere blanditiis!</p>
-                        <img class="blog-text-image" src="./Images/Portfolio Image.png" alt="">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsam, commodi dicta at quis obcaecati similique!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor veritatis deleniti ad non. Vitae, beatae facere nam itaque fugiat, magnam perspiciatis excepturi non provident ipsum rerum.</p>
-                    </div>
+    </nav>
 
-                    
-                    <button>Back to All Blogs</button>
-
-                </div>
-
-                
-                
-            </section>
-      </main>
-      <footer>
-        <div class="links-items-container">
-          <div class="links-items">
-            <a href="#">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./skills.html">View CV</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./contact.html">Contact</a>
+  </header>
+  <div class="dark-mode is-visible">
+    <div class="dark-mode-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="round slider"></div>
+      </label>
+      <span class="dm-label">DARK MODE</span>
+    </div>
+  </div>
+  <main>
+    <section class="blog-container">
+      <div class="blog-image-container">
+        <img class="blog-page-main-image" src="./Images/parachute2.jpg" alt="">
+        <div class="blog-title-container">
+          <h1 class="blog-page-title">My Parachute into Tech</h1>
+          <div class="tag-container">
+            <ul class="tag-list">
+              <li class="tag">Professional Development</li>
+              <li class="tag">General</li>
+            </ul>
           </div>
         </div>
-        <p>&copy; <span id="date"></span>
-          <span class="highlight">My Portfolio</span> Built by Matt Willis
-        </p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
+      </div>
+      <div class="blog-content-container">
+        <div class="blog-info-container">
+          <div class="blog-info-img-container">
+            <img class="blog-info-img" src="./Images/Profile Pic1.png" alt="">
+          </div>
+          <div class="blog-info-text">
+            <p><strong>Written By:</strong> Matt Willis</p>
+            <p><strong>Date:</strong> 10th October 2022</p>
+          </div>
+        </div>
+        <div class="blog-text-container section-padding">
+          <p>I've been a data analyst, a primary school teacher, a global
+            implementation lead and a learning manager. But now, in my mid-thirties, I've finally found my calling as a
+            programmer. Here's how a parachute helped me get here…</p>
+
+          <p class="focus">Ok, so let's rewind.</p>
+
+          <p>As a child, I was never one of those people who knew what they wanted to be when they grew up. Not that it
+            really bothered me back then. I was busy being a kid.</p>
+
+          <p>When I got to college, I simply chose subjects that I was reasonably good at, which happened to be maths
+            and science (with some sport thrown in for good measure). A similar pattern emerged when I had to pick what
+            to study at university. I hedged my bets and chose a joint honors in Maths and Chemistry but I still had no
+            idea what I was going to do with it all.</p>
+
+          <p>After all of my <span class=”strikethrough>partying</span>studying, it was time to join the real world. I
+            had to get a J.O.B (uurgh!). And of course, what does a guy with a Maths and Chemistry degree do? He goes
+            and works at Tesco, of course. </p>
+
+          <p>Actually, I made a late call not to study for a PGCE (to become a teacher) and fell into my role at Tesco.
+            It was very much a 'it's not what you know, but who you know' scenario. My sister's friend's boyfriend's
+            cousin (or some other family association) had an opening for a junior data analyst. Eager to earn that first
+            real paycheck, I threw myself into the interview process and I was fortunate enough to get the job. The time
+            had arrived, time to step onto the professional ladder and start working my way to the top. That's what
+            we're all supposed to do, right? </p>
+
+          <p>Fast forward 5 years and I'd done the rounds (having worked with some amazing people, may I add). Data
+            analyst. Check. Customer service exec. Check Merchandiser. Check. I'd learned so much about the world of
+            business and retail, but something wasn't right. Something deep down. There was a metaphorical itch that
+            needed scratching… </p>
+
+          <figure>
+            <img class="blog-text-image" src="./Images/Raiders.png" alt="">
+            <figcaption><i>Caption Text</i></figcaption>
+          </figure>
+
+          <p class="focus">So, about that itch.</p>
+
+          <p>You'll remember from earlier that I said I gave up a place on a PGCE. Well, I couldn't shake the idea that
+            maybe I actually did want to be a teacher. It spoke to my inner desire to help people. I was also a
+            jack-of-all-trades, which meant teaching maths, science, art, sport and everything between as a primary
+            school teacher sounded quite appealing. </p>
+
+          <p>So, I re-trained. And I was/am a pretty good teacher - I achieved qualified teacher status with
+            'outstanding' progress and was ready to take off the training wheels. It was time to share my knowledge,
+            wisdom and very poor jokes with a classroom full of 8-year olds. We had a blast!</p>
+
+          <p>Jump forward another 5 years though, and I was ready to take my teaching to a new level. I wanted to
+            broaden my horizons, taking the skills I'd developed as a teacher and apply them in the world of Learning
+            and Development (L&D). For those unaware of what L&D professionals do, they help people develop skills and
+            knowledge in the workplace, either delivering workshops and training sessions, or by creating and
+            implementing company-wide policies designed to support the development of their people. And it happened. I
+            took on the role as L&D Manager for an EdTech (Educational Technology) company. It seemed to make sense - I
+            was combining the commercial experience from my time at Tesco, with the more recent teaching experience.
+            Perfect!</p>
+
+          <p class="focus">Then, the world stopped.</p>
+
+          <p>Well, not exactly. But the COVID pandemic definitely had a huge impact around the world.</p>
+
+          <p>With the UK being 'locked down' for so long during the pandemic, my life, like so many others, slowed down.
+            It forced me to reflect on life and what was important to me. So much of what we were used to, things we
+            often took for granted, had been taken away from us. With this paradigm shift, I realised that I wasn't
+            happy.</p>
+
+          <p>For so long, I'd been following a path that I thought I should be following. A path that says to be
+            'successful' you have to work long hours, subscribe to the JFDI way of working (Google it, if you don't
+            know), earn lots of money and get a big house. All without really thinking about why I was doing what I was
+            doing. I was so busy doing what I thought would make me happy, I didn't stop to think about what actually
+            made me happy, what motivated me, what made me want to get up and go! I needed to make a change, but I
+            didn't know where to start. </p>
+
+          <p class="focus">Until, I found my parachute.</p>
+
+          <p>That's right. A parachute. Not the kind you're thinking of, sadly. It's not the 'jump out of a plane and
+            pull the cord' kind of parachute, but the book <strong><i><a href="https://www.parachutebook.com/" target="_blank">What color is your parachute?</a></i></strong> written by Richard N Bolles.
+            It's what gave me the direction I needed at a time where I felt lost.</p>
+
+          <figure>
+            <img class="blog-text-image" src="./Images/book.jpg" alt="">
+            <figcaption><i>The book that helped shaped my career choices!</i></figcaption>
+          </figure>
+
+          <p>Bolles expertly encourages his readers to diverge from the 'traditional' way of thinking about jobs.
+            Instead of thinking about what job you might want to do, or what job title you're looking for, he encourages
+            you to create a unique self-inventory that helps design your career - and your life - around your key
+            passions, transferable skills, motivational triggers, and personality traits. In doing so, I developed a
+            deeper understanding of the type of work and working environment that I was most suited to.</p>
+
+            <p>Completing the exercises set out in the book, I now had a list of the things that were truly important to me
+            which would guide me on my quest to find career satisfaction. And whilst I appreciate that some of what
+            follows might sound abstract, it helped me articulate what I was looking for. Here's some of the things that
+            ended up on my list:</p>
+
+          <ul>
+            <li>&#9889; Being creative</li>
+            <li>&#9889; Building or restoring things</li>
+            <li>&#9889; Researching</li>
+            <li>&#9889; Visible/instant outcomes</li>
+            <li>&#9889; Design</li>
+            <li>&#9889; Continuous learning</li>
+            <li>&#9889; Technology</li>
+            <li>&#9889; Variety in work and location</li>
+            <li>&#9889; Solving problems</li>
+            <li>&#9889; See the direct impact of my work</li>
+            <li>&#9889; Improving process</li>
+            <li>&#9889; Hybrid working</li>
+          </ul>
+
+          <p>Do you notice how there isn't a job title in sight? These are all about what I respond well to, what
+            motivates me, what I enjoy doing, reading or talking about, and the type of environment I like to work in.
+          </p>
+
+          <p>So, I began to think about what type of job might hit all the right spots. What type of role would allow
+            me to be me, and do as many of the things that I enjoy all at once? Granted, it's rare to enjoy every
+            single thing about a job, but it felt like a really good place to start. And after some self-reflection
+            and long chats with my wife and family, I found myself being drawn to graphic design (no pun intended… or
+            maybe there was). It felt right.</p>
+
+          <p>Now I can hear you all saying, “But Matt, that isn't programming!”. And you'd be right, I wasn't
+            programming but I <i>was</i> doing something that I genuinely enjoyed. And it was exciting. I learned
+            colour theory, design patterns, typography, and design software, which helped me on my way to setting up
+            an Etsy store, selling my very own wall art designs. Feel free to check it out here!</p>
+
+          <p class="focus">Then, something wonderful happened!</p>
+
+          <p>I saw the overlap between designing for print and designing for the web. So, I let it ride. I began to
+            explore the world of web design, learning how to write HTML and CSS. Soon, I was adding JavaScript to
+            bring it all to life. And now, at the time of writing this, I'm dipping my toes into the ever-expanding
+            pool of libraries and frameworks such as React, Vue, Bootstrap and Tailwind.</p>
+
+          <p>I love it.</p>
+
+          <p>Now, I'd be lying if I said it was easy. It's not. I have so much still to learn and I have moments of
+            frustration when I can't make something work, but I wouldn't change a thing. I can't put it down. When I'm
+            building something for the web, I'm in my element. I lose sense of time and space and find myself in a
+            state of flow every time I sit down at the laptop. </p>
+
+          <p>It's almost like I found what I was looking for - a career path that I can enjoy and grow into, not grow
+            out of. A career path that requires continuous learning and a thirst for knowledge, that rewards precision
+            and attention to detail, whilst allowing me to be creative and explore new things. A career, dare I say
+            it, where I'll be happy for all the right reasons.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <button>Back to All Blogs</button>
+
+    <section class="section-padding recommended-blogs">
+      <h2 class="section-header">Recommened Blogs</h2>
+      <div class="recommended-blogs-container">
+        <div class="recommended-blog-container">
+          <div class="recommended-blog-img">
+            <img src="./Images/parachute2.jpg" alt="">
+          </div>
+          <div class="recommended-blog-details">
+            <h3>Blog Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum doloremque dolores eius
+              quidem repudiandae autem neque placeat.</p>
+          </div>
+        </div>
+        <div class="recommended-blog-container">
+          <div class="recommended-blog-img">
+            <img src="./Images/Blog1.jpg" alt="">
+          </div>
+          <div class="recommended-blog-details">
+            <h3>Blog Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum doloremque dolores eius
+              quidem repudiandae autem neque placeat.</p>
+          </div>
+        </div>
+        <div class="recommended-blog-container">
+          <div class="recommended-blog-img">
+            <img src="./Images/book.jpg" alt="">
+          </div>
+          <div class="recommended-blog-details">
+            <h3>Blog Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum doloremque dolores eius
+              quidem repudiandae autem neque placeat.</p>
+          </div>
+        </div>
+        <div class="recommended-blog-container">
+          <div class="recommended-blog-img">
+            <img src="./Images/MYNFT.png" alt="">
+          </div>
+          <div class="recommended-blog-details">
+            <h3>Blog Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum doloremque dolores eius
+              quidem repudiandae autem neque placeat.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="links-items-container">
+      <div class="links-items">
+        <a href="#">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">View CV</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <p>&copy; <span id="date"></span>
+      <span class="highlight">My Portfolio</span> Built by Matt Willis
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
 </DOCTYPE>

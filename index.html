@@ -1,317 +1,370 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" /> 
-      <title>Matt Willis - The Portfolio</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body>
-      <header>
-        <nav class="main-nav">
-          <a href="./index.html" class="logo">Matt Willis</a>
-          <ul class="main-nav-menu">
-            <li class="main-nav-item">
-              <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./about.html" class="nav-link">About</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Matt Willis - The Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--<link href="normalize.css" rel="stylesheet" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="./index.html" class="logo">Matt Willis</a>
+      <ul class="main-nav-menu">
+        <li class="main-nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="dark-mode is-visible">
+    <div class="dark-mode-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="round slider"></div>
+      </label>
+      <span class="dm-label">DARK MODE</span>
+    </div>
+  </div>
+  <main>
+    <section id="Intro">
+      <div id="hero-container">
+        <div class="intro-image-container">
+          <div class="header-img-container">
+            <img class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
+          </div>
+        </div>
+        <div class="hero-title">
+          <h1 class="welcome-text underline">Matt Willis</h1>
+          <p class="welcome-text-lower">Web Developer</p>
+        </div>
+        <div class="portfolio-btn">
+          <a class="portfolio-btn-container" href="./projects.html">
+            <span>View My Projects</span>
+            <div class="icon-container">
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
-        </nav>
-        
-      </header>
-      <div class="dark-mode is-visible">
-        <div class="dark-mode-container">
-          <label class="theme-slider" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="round slider"></div>
-          </label>
-          <span class="dm-label">DARK MODE</span>
+          </a>
         </div>
       </div>
-      <main>
-        <section id="Intro">
-          <div id="hero-container">
-            <div class="hero-title">
-              <p class="welcome-text">Hi, I'm <span class="welcome-text underline">Matt</span>.</p>
-              <p class="welcome-text">Web Developer</p>
-            </div>
-            <div class="intro-image-container">
-              <div class="header-img-container">
-                <img class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
-              </div>
-            </div>
-            <div class="portfolio-btn-container">
-              <a class="portfolio-button" href="./projects.html">
-                <span>View My Projects</span>
-                <div class="icon-container">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
-            </div>
-            <p class="intro-text">
-              Being able to create something from nothing, waving your creative wand and solve problems at the same time - it's really special. That's why I love to code!
-            </p>    
-          </div>
-        </section> <!-- closing intro section -->
-        <section id="projects">
-          <div class="section-header">
-            <div class="header-text-container">
-              <h3 class="section-header-text">New Projects:</h3>
-            </div>
-          </div>
-          <div class="projects-container main-page-project-con">
-            <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-1">
-              <div class="project-title-container">
-                <h3>The Portfolio</h3>
-                <div class="tag-container">
-                  <ul class="tag-list">
-                    <li class="tag">html / css</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-content-container">
-                <div class="project-container-left">
-                  <div class="project-image-container">
-                    <img src="./Images/Portfolio Image.png" alt="">
-                  </div>
-                  
-                </div>
-                  <div class="button-group"> 
-                    <button class="project-button" >
-                      <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                    </button>
-                    <button class="github-button" >
-                      <a href="./project-page.html">Project Details</a>
-                    </button>
-                  </div>
-                
-              </div>
-            </div>  <!-- closing project id=project-1 -->
-            <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-2">
-              <div class="project-title-container">
-                <h3>The Other Portfolio</h3>
-                <div class="tag-container">
-                  <ul class="tag-list">
-                    <li class="tag">html / css</li>
-                    <li class="tag">JavaScript</li>
-                    <li class="tag">Sass</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-content-container">
-                <div class="project-container-left">
-                  <div class="project-image-container">
-                    <img src="./Images/Portfolio 2 Image.png" alt="">
-                  </div>
-                  
-                </div>
-                  <div class="button-group"> 
-                    <button class="project-button" >
-                      <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                    </button>
-                    <button class="github-button" >
-                      <a href="./project-page.html">Project Details</a>
-                    </button>
-                  </div>
-                
-              </div>
-            </div>  <!-- closing project id=project-1 -->
-            <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-3">
-              <div class="project-title-container">
-                <h3>Website Redesign</h3>
-                <div class="tag-container">
-                  <ul class="tag-list">
-                    <li class="tag">html / css</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-content-container">
-                <div class="project-container-left">
-                  <div class="project-image-container">
-                    <img src="./Images/HRS screenshot.png" alt="">
-                  </div>
-                  
-                </div>
-                  <div class="button-group"> 
-                    <button class="project-button" >
-                      <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                    </button>
-                    <button class="github-button" >
-                      <a href="./project-page.html">Project Details</a>
-                    </button>
-                  </div>
-                
-              </div>
-            </div>  <!-- closing project id=project-1 -->
-            <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-4">
-              <div class="project-title-container">
-                <h3>Wigmore Raiders</h3>
-                <div class="tag-container">
-                  <ul class="tag-list">
-                    <li class="tag">html / css</li>
-                    <li class="tag">javascript</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-content-container">
-                <div class="project-container-left">
-                  <div class="project-image-container">
-                    <img src="./Images/Raiders.png" alt="">
-                  </div>
-                  
-                </div>
-                  <div class="button-group"> 
-                    <button class="project-button" >
-                      <p><a href="https://matt-willis-portfolio.netlify.app/">Live Project</p></a>
-                    </button>
-                    <button class="github-button" >
-                      <a href="./project-page.html">Project Details</a>
-                    </button>
-                  </div>
-                
-              </div>
-            </div>  <!-- closing project id=project-1 -->
-          </div> <!-------- CLOSING PROJECT CONTAINER -------------->
+    </section> <!-- closing intro section -->
 
-          <a href="./projects.html" class="view-all-btn">
-            <span>View All Projects</span>
-          </a>  
-        </section> <!------- closing projects section ----------->
-        <section id="skills">
-          <div class="skills-container">
-            <div class="experience-container">
-              <div class="skills-shape"></div>
-              <div class="header-text-container">
-                <h3 class="section-header-text">Experience:</h3>
-              </div>
-              <div class="skills-text">
-                <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects, providing strategic direction and building strong professional relationships.  Thriving in face-paced, dynamic environments, I have demonsrated an ability to problem-solve,</p>
-              </div>
-            </div>
-            <div class="tech-skills-container">
-              <h3 class="section-header-text">Technologies:</h3>
-              <ul class="skills-list">
-                <li class="skill">
-                  <span>html</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-html5"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>css</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-css3-alt"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>javaScript</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-js"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>react</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-react"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>git</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-git"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>node.js</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-node-js"></i>
-                  </div>
-                </li>
-                <li class="skill">
-                  <span>github</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-github"></i>
-                  </div>                    
-                </li>
-                <li class="skill">
-                    <span>sass</span>
-                    <div class="skill-icon">
-                      <i class="fa-brands fa-sass"></i>
-                    </div>
-                </li>
+    <section id="projects" class="section-padding">
+      <div class="section-header">
+        <div class="header-text-container">
+          <h2 class="section-header-text">Recent Projects</h2>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="project-container js-scroll fade-in-bottom" id="project-1">
+          <div class="project-title-container">
+            <h3>The Portfolio</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">Sass</li>
+                <li class="tag">JavaScript</li>
               </ul>
             </div>
           </div>
-          <a href="./about.html" class="view-all-btn">
-            <span>View full profile</span>
-          </a>
-        </section>  <!-- closing SKILLS section -->
-        <section id="Contact">
-          <div class="section-header">
-            <div class="header-text-container">
-              <h3 class="section-header-text">Contact:</h3>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/Portfolio Image.png" alt="">
+            </div>
+            <div class="project-summary">
+              <p>My portfolio - a project that doucments my journey so far and showcases what I've been working on.</p>
+            </div>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+
+          </div>
+        </div> <!-- closing project id=project-1 -->
+        <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-2">
+          <div class="project-title-container">
+            <h3>The Other Portfolio</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">JavaScript</li>
+                <li class="tag">Sass</li>
+              </ul>
             </div>
           </div>
-          <div class="contact-info">
-            <div class="contact-text">
-            <p>If you want to chat, please get in touch.  I'm always on the lookout for new projects, to collaborate, or to discuss potential new roles.  Please reach out to me via LinkedIn (link below) and I'll get back to you as soon as I can.</p>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/Portfolio 2 Image.png" alt="">
             </div>
-            <div class="social-media-container">
-              <a class="social-link-container" href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/" target="_blank">
-                <div class="social-media-item">
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
-                <span>LinkedIn</span>
-              </a>
-              <a class="social-link-container" href="https://github.com/Matt-Willis-20" target="_blank">
-                <div class="social-media-item">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <span>GitHub</span>
-              </a>
+            <div class="project-summary">
+              <p>My portfolio - a project that doucments my journey so far and showcases what I've been working on.</p>
             </div>
-          </div> 
-        </section>  <!-- closing contact section -->
-      </main>
-      <footer>
-        <div class="links-items-container">
-          <div class="links-items">
-            <a href="#">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./skills.html">View CV</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./contact.html">Contact</a>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+
+          </div>
+        </div> <!-- closing project id=project-1 -->
+        <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-3">
+          <div class="project-title-container">
+            <h3>Website Redesign</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/HRS screenshot.png" alt="">
+            </div>
+            <div class="project-summary">
+              <p>My portfolio - a project that doucments my journey so far and showcases what I've been working on.</p>
+            </div>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+
+          </div>
+        </div> <!-- closing project id=project-1 -->
+        <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-4">
+          <div class="project-title-container">
+            <h3>Finsweet</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">javascript</li>
+                <li class="tag">react</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/finsweet.png" alt="">
+            </div>
+            <div class="project-summary">
+              <p>Finsweet - A project which has allowed me to explore more complex features and functionality of React.</p>
+            </div>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+          </div>
+        </div> <!-- closing project id=project-1 -->
+        <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-5">
+          <div class="project-title-container">
+            <h3>GTP-3</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">javascript</li>
+                <li class="tag">react</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/MYNFT.png" alt="">
+            </div>
+            <div class="project-summary">
+              <p>My portfolio - a project that doucments my journey so far and showcases what I've been working on.</p>
+            </div>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+          </div>
+        </div> <!-- closing project id=project-1 -->
+        <div class="main-page-project-con project-container js-scroll fade-in-bottom" id="project-6">
+          <div class="project-title-container">
+            <h3>Marvel-O-Pair</h3>
+            <div class="tag-container">
+              <ul class="tag-list">
+                <li class="tag">javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-content-container">
+            <div class="project-image-container">
+              <img src="./Images/marvel.png" alt="">
+            </div>
+            <div class="project-summary">
+              <p>A memory game for those Marvel fans out there!  API calls, data filtering and manipulation.  A JS-lover's dream!</p>
+            </div>
+            <div class="project-btn-group">
+              <a class="project-btn live-btn" href="https://matt-willis-portfolio.netlify.app/">Live Project</a>
+              <a class="project-btn detail-btn" href="./project-page.html">READ MORE...</a>
+            </div>
+          </div>
+        </div> <!-- closing project id=project-1 -->
+      </div>
+      <!-------- CLOSING PROJECT CONTAINER -------------->
+
+      <a href="./projects.html" class="view-all-btn">
+        <span>View All Projects</span>
+        <div class="icon-container">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+    </section>
+    <!------- closing projects section ----------->
+    <section class="skills section-padding">
+      <div class="skills-container">
+        <div class="experience-container">
+          <div class="header-text-container">
+            <h2 class="section-header">Experience</h2>
+          </div>
+          <div class="skills-text">
+            <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects,
+              providing strategic direction and building strong professional relationships. Thriving in face-paced,
+              dynamic environments, I have demonsrated an ability to problem-solve,</p>
           </div>
         </div>
-        <p>&copy; <span id="date"></span>
-          <span class="highlight">My Portfolio</span> Built by Matt Willis
-        </p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
+        <div class="tech-skills-container">
+          <h2 class="section-header">Technologies</h2>
+          <ul class="skills-list">
+            <li class="skill">
+              <span>html</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>css</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>javaScript</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>react</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>git</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-git"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>node.js</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>github</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>sass</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-sass"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>sass</span>
+              <div class="skill-icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+            </li>
+            <li class="skill">
+              <span>affinity</span>
+              <div class="skill-icon">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Affinity</title><path d="M9.368 1.08h3.778l.318.55h1.082L24 18.004v.001l-2.036 3.47H13.69l.84 1.445h-.365l-.84-1.446H3.057l-.526-.923h-.652L0 17.298l.002-.001 2.41-4.176 2.23-1.288 3.69-6.39-.742-1.285L9.368 1.08zm2.224 5.652L5.066 18.008h6.25l-.723-1.246 6.808.006-5.809-10.036Z"/></svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="./about.html" class="view-all-btn">
+        <span>View Full profile</span>
+        <div class="icon-container">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+    </section> <!-- closing SKILLS section -->
+
+    <section id="Contact" class="section-padding">
+      <div class="section-header">
+        <div class="header-text-container">
+          <h2>Contact:</h2>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-text">
+          <p>If you want to chat, please get in touch. I'm always on the lookout for new projects, to collaborate, or to
+            discuss potential new roles. Please reach out to me via LinkedIn (link below) and I'll get back to you as
+            soon as I can.</p>
+        </div>
+        <div class="social-media-container">
+          <a class="social-link-container" href="https://www.linkedin.com/in/matt-willis-assoc-cipd-16b74b17/"
+            target="_blank">
+            <div class="social-media-item">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link-container" href="https://github.com/Matt-Willis-20" target="_blank">
+            <div class="social-media-item">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section> <!-- closing contact section -->
+  </main>
+  <footer>
+    <div class="links-items-container">
+      <div class="links-items">
+        <a href="#">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">View CV</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <p>&copy; <span id="date"></span>
+      <span class="highlight">My Portfolio</span> Built by Matt Willis
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
 </DOCTYPE>

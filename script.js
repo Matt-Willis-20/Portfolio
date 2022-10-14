@@ -153,7 +153,6 @@ window.addEventListener("scroll", () => {
 
 /* --------- FILTER PROJECTS BY TECH ---------- */
 
-
 const divs = document.querySelectorAll('.filterDiv');
 const filterButtons = document.querySelectorAll('.filter-button');
 const filterNumber = document.querySelector('.filtered-number');
@@ -186,6 +185,19 @@ function filterSelection(e) {
 
 filterButtons.forEach(filterButton => filterButton.addEventListener('click', filterSelection));
 filterButtons.forEach(filterButton => filterButton.addEventListener('click', changeColor));
+
+
+// CHANGE PROFILE IMAGE ON MOUSEOVER
+
+const profileImages = document.querySelectorAll('.header-img');
+
+function swapImage() {
+  console.log("click");
+}
+
+profileImages.forEach(image => image.addEventListener('click', swapImage));
+
+
 
 
 

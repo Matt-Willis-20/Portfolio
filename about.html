@@ -1,225 +1,326 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <title>Matt Willis - About</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="styles.css" rel="stylesheet" />
-    </head>
-    <body>
-      <header>
-        <nav class="main-nav">
-          <a href="#" class="logo">Matt Willis</a>
-          <ul class="main-nav-menu">
-            <li class="main-nav-item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="main-nav-item current-page">
-              <a href="./about.html" class="nav-link">About</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Matt Willis - About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="./index.html" class="logo">Matt Willis</a>
+      <ul class="main-nav-menu">
+        <li class="main-nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="main-nav-item current-page">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="main-nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+  </header>
+  <div class="dark-mode is-visible">
+    <div class="dark-mode-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="round slider"></div>
+      </label>
+      <span class="dm-label">DARK MODE</span>
+    </div>
+  </div>
+  <main class="about-me-page">
+    <section class="about-me-hero section-padding">
+      <h1>About me</h1>
+      <div class="about-me-intro">
+        <div class="header-img-container">
+          <img id="test" class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
+        </div>
+        <div class="about-me-content">
+          <div class="about-me-text">
+            <p>Being able to create something from nothing. To flex your creative muscles and solve problems at the same
+              time. It's really special.<br><br> That's why I love to code!</p>
+          </div>
+          <a href="" class="view-all-btn">
+            <span>Download CV</span>
+            <div class="icon-container">
+              <i class="fa-solid fa-download"></i>
             </div>
-        </nav>
-        
-      </header>
-      <div class="dark-mode is-visible">
-        <div class="dark-mode-container">
-          <label class="theme-slider" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="round slider"></div>
-          </label>
-          <span class="dm-label">DARK MODE</span>
+          </a>
         </div>
       </div>
-      <main class="about-me-page">
-        <section class="about-me-hero">
-          <h1 class="page-title">About me</h1>
-          <div class="about-me-intro">
-          <div class="intro-image-container about-img-container">
-            <div class="header-img-container">
-              <img class="header-img" src="./Images/Profile Pic1.png" alt="matt willis profile picture">
-            </div>
-          </div>
-          <h1 class="mobile-about-title">About Me</h1>
-          <div class="about-me-right">
-            <div class="about-me-text">
-              <p>Having worked across puplic and private sectors, I have gained valuable experience leading projects, providing strategic direction and building strong professional relationships.  <br><br>Thriving in face-paced, dynamic environments, I have demonsrated an ability to problem-solve,</p>
-            </div>
-            <a href="./projects.html" class="view-all-btn">
-              <span>Download CV</span>
-            </a>
-          </div>
-          
-        </div> 
-                   
-        </section>
+    </section>
 
-        <section class="skills">
-          <div class="about-skills-shape"></div>
-          <div class="tech-skills-container">
-            <h3 class="section-header-text">Technologies:</h3>
-            <ul class="about-skills-list">
-              <li class="skill">
-                <span>html</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-html5"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>css</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-css3-alt"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>javaScript</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-js"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>react</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-react"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>git</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-git"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>node.js</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-node-js"></i>
-                </div>
-              </li>
-              <li class="skill">
-                <span>github</span>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>                    
-              </li>
-              <li class="skill">
-                  <span>sass</span>
-                  <div class="skill-icon">
-                    <i class="fa-brands fa-sass"></i>
-                  </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <h3 class="section-header-text">Experience:</h3>
-        <section class="timeline wrapper">
-          <div class="center-line">
-            <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
-          </div>
-          <div class="row row-1">
-            <section>
-              <i class="icon fa-solid fa-building-columns"></i>
-              <div class="details">
-                <span class="timeline-item-title">Career Transition</span>
-                <span>2022 - Present</span>
-              </div>
-              <p>I have been learning the skills required to make the tranition into ...</p>
-              <div class="bottom">
-                <a href="#">Read more</a>
-              </div>
-            </section>
-          </div>
-          <div class="row row-2">
-            <section>
+    <section class="section-padding" id="experience-timeline">
+      <h2 class="section-header-text section-header">Experience</h2>
+      <section class="timeline wrapper">
+        <div class="center-line">
+          <a href="#experience-timeline" class="scroll-icon">
+            <i class="fas fa-caret-up"></i>
+          </a>
+        </div>
+        <div class="row">
+          <section>
+            <div class="timeline-icon-container">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div></div>
+            <div class="details">
+              <span class="timeline-item-title">Career Transition</span>
+              <span>2022 - Present</span>
+            </div>
+            <p>Since making the decision to persue a career in tech, I have re-trained as a programmer. I am currently
+              in the process of applying for a new role</p>
+            <div class="more-info-btn">
+              <a href="#">Read more...</a>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <section class="js-scroll fade-in-bottom">
+            <div class="timeline-icon-container">
               <i class="icon fas fa-star"></i>
-              <div class="details">
-                <span class="timeline-item-title">Whizz Education</span>
-                <span>2007</span>
-              </div>
-              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-              <div class="bottom">
-                <a href="#">Read more</a>
-              </div>
-            </section>
-          </div>
-          <div class="row row-1">
-            <section>
+            </div>
+            <div class="details">
+              <span class="timeline-item-title">Whizz Education</span>
+              <span>2018-2022</span>
+            </div>
+            <p>Initially working as an Education Success Partner (ESP), I supported schools in raising attainment in
+              Maths.<br> I soon transitioned into the role of Learning and Development Manager, driving the performance
+              of the company through the professional development of our employees.
+            </p>
+            <div class="more-info-btn">
+              <a href="#">Read more</a>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <section class="js-scroll fade-in-bottom">
+            <div class="timeline-icon-container">
               <i class="icon fas fa-rocket"></i>
-              <div class="details">
-                <span class="timeline-item-title">Teaching</span>
-                <span>3rd Jan 2021</span>
-              </div>
-              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-              <div class="bottom">
-                <a href="#">Read more</a>
-              </div>
-            </section>
-          </div>
-          <div class="row row-2">
-            <section>
+            </div>
+
+            <div class="details">
+              <span class="timeline-item-title">Teaching</span>
+              <span>2012-2018</span>
+            </div>
+            <p>As a primary school teacher, I planned and delivered fun, interactive and educationally powerful lessons.
+              Taking a data-driven approach, I was able to raise attainment through targeted teaching and intervention.
+            </p>
+            <div class="more-info-btn">
+              <a href="#">Read more</a>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <section class="js-scroll fade-in-bottom">
+            <div class="timeline-icon-container">
               <i class="icon fas fa-globe"></i>
-              <div class="details">
-                <span class="timeline-item-title">Tesco PLC</span>
-                <span>4th Jan 2021</span>
-              </div>
-              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-              <div class="bottom">
-                <a href="#">Read more</a>
-              </div>
-            </section>
-          </div>
-          <div class="row row-1">
-            <section>
+            </div>
+
+            <div class="details">
+              <span class="timeline-item-title">Tesco PLC</span>
+              <span>2007-2012</span>
+            </div>
+            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
+              vero sapiente voluptas debitis dicta dolore.</p>
+            <div class="more-info-btn">
+              <a href="#">Read more</a>
+            </div>
+          </section>
+        </div>
+        <div class="row">
+          <section class="js-scroll fade-in-bottom">
+            <div class="timeline-icon-container">
               <i class="icon fas fa-paper-plane"></i>
-              <div class="details">
-                <span class="timeline-item-title">University of St. Andrews</span>
-                <span>5th Jan 2021</span>
-              </div>
-              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-              <div class="bottom">
-                <a href="#">Read more</a>
-              </div>
-            </section>
+            </div>
+            <div class="details">
+              <span class="timeline-item-title">University of St. Andrews</span>
+              <span>2002-2006</span>
+            </div>
+            <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
+              vero sapiente voluptas debitis dicta dolore.</p>
+            <div class="more-info-btn">
+              <a href="#">Read more</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <section class="skills-container skills section-padding">
+      <div class="tech-skills-container">
+        <h2 class="section-header-text section-header">Technologies</h2>
+        <ul class="about-skills-list">
+          <li class="skill">
+            <span>html</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>css</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>javaScript</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>react</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>git</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-git"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>node.js</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>github</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>sass</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-sass"></i>
+            </div>
+          </li>
+          <li class="skill">
+            <span>Bootstrap</span>
+            <div class="skill-icon">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <aside class="tech-stack-detail">
+        <h2 class="section-header-text section-header">My journey</h2>
+        <div class="journey-text">
+          <p>My coding journey began in March 2022. Following the Codecademy FrontEnd Engineer career path, I have built
+            a strong foundational knowledge of <abbr title="HyperText Markup Language">HTML</abbr> and <abbr
+              title="Cascading Style Sheets">CSS</abbr> and Javascript.</p><br>
+
+          <p>My Javascript knowloedge continues to grow as I build projects and collaborate with other developers. I am
+            utilising other libraries and frameworks, such as React, Bootstrap and Material UI, but my main focus, for
+            the timebeing, will be to continue builind my JavaScript knowledge.</p>
+        </div>
+
+      </aside>
+    </section>
+
+    <a href="" class="view-all-btn">
+      <span>Download CV</span>
+      <div class="icon-container">
+        <i class="fa-solid fa-download"></i>
+      </div>
+    </a>
+
+    <section class="section-padding interests">
+      <div class="interests-container">
+        <div class="interest-container">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span>Travel</span>
+          <p>I have wonderlust. There, I said it! I love the freedom that comes with exploring new places, but the
+            question is, where to explore next? </p>
+        </div>
+
+        <div class="interest-container">
+          <div class="interest-logo-container">
+            <i class="fa-solid fa-basketball"></i>
           </div>
-          
-        </section>
-        <a href="./projects.html" class="view-all-btn">
-          <span>Download CV</span>
-        </a>
-        
-      </main>
-      <footer>
-          <div class="links-items">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">View CV</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+          <span>SPORT</span>
+          <p>I've always played sport - its good for the mind and the body. At the moment, its 5-a-side football,
+            squash, running and the occasional swim! </p>
+        </div>
+
+        <div class="interest-container">
+          <div class="interest-logo-container">
+            <i class="fa-solid fa-burger"></i>
           </div>
-        
-        <p>&copy; <span id="date"></span>
-          <span class="highlight">My Portfolio</span> Built by Matt Willis
-        </p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
+          <span>FOOD</span>
+          <p>Wherever I am, I'll try new food. Whether its a new cuisine, something new on a menu, or an interesting
+            recipe to try at home, I'm in! </p>
+        </div>
+
+        <div class="interest-container">
+          <div class="interest-logo-container">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <span>FRIENDS & FAMILY</span>
+          <p>Although life can get in the way sometimes, you can't beat time with friends and family. Quiet nights in or
+            fun days out - its good to mix it up.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <div class="links-items-container">
+      <div class="links-items">
+        <a href="#">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./skills.html">View CV</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <p>&copy; <span id="date"></span>
+      <span class="highlight">My Portfolio</span> Built by Matt Willis
+    </p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+</body>
+
+</html>
 </DOCTYPE>
