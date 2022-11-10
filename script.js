@@ -1,3 +1,5 @@
+
+
 /* --------  NAVBAR HAMBURGER MENU ----------*/
 
 const hamburger = document.querySelector(".hamburger");
@@ -31,17 +33,24 @@ function switchTheme(e) {
     /* Once checkbox is checked default theme change to dark */
     if (e.target.checked) {
         document.documentElement.setAttribute('theme', 'dark');
+        localStorage.setItem("data-theme", "dark");
     }
  
     /* While page in dark mode and checkbox is checked then theme back to change light*/
     else {
         document.documentElement.setAttribute('theme', 'light');
+        localStorage.setItem("data-theme", "light");
     }
 }
  
 toggleSwitch.addEventListener('change', switchTheme, false);
 
-
+if(localStorage.getItem("data-theme")) {
+  document.documentElement.setAttribute("theme", localStorage.getItem("data-theme"));
+  if(localStorage.getItem("data-theme") == "dark") {
+    toggleSwitch.checked = true;
+  }
+  } 
 
 
 /*-------- add/remove dark-mode element on scroll ------------*/
