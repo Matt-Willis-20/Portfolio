@@ -898,6 +898,7 @@ footer .links-items-container .links-items a {
   margin-bottom: 2rem;
   padding: 0 2rem;
   max-width: 700px;
+  text-align: center;
 }
 .about-me-hero .about-me-intro .about-me-content a {
   width: 170px;
