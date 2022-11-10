@@ -1046,27 +1046,27 @@ footer .links-items-container .links-items a {
   flex-direction: column;
 }
 .wrapper .row section .details .timeline-item-title {
-  font-family: "Bebas Neue", cursive;
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+.wrapper .row section .details span {
+  margin-bottom: 0.5rem;
 }
 .wrapper .row section p {
-  margin: 10px 0 17px 0;
+  margin-top: 10px;
   font-family: Roboto, sans-serif;
 }
-.wrapper .row section .more-info-btn {
-  display: flex;
-  align-items: center;
+.wrapper .row section ul {
+  margin-top: 1.5rem;
 }
-.wrapper .row section .more-info-btn a {
-  text-decoration: none;
-  background: var(--icon-color);
-  color: var(--primary-color);
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-size: 0.75rem;
+.wrapper .row section ul li {
+  list-style: disc;
+  margin: 0 0 0.6rem 1rem;
+  line-height: 1.3;
 }
-.wrapper .row section .more-info-btn a:hover {
-  transform: scale(1.04);
+.wrapper .row section img {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 375px) {
@@ -1115,14 +1115,14 @@ footer .links-items-container .links-items a {
   .wrapper .row {
     margin: 30px 0 3px 50px;
   }
+  .wrapper .row section {
+    padding: 1.3rem;
+  }
   .wrapper .row section margin p {
     font-size: 1rem;
   }
   .wrapper .row section .details .timeline-item-title {
     font-size: 1.75rem;
-  }
-  .wrapper .row section .more-info-btn a {
-    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1138,6 +1138,26 @@ footer .links-items-container .links-items a {
   }
   .skills .tech-skills-container ul li .skill-icon i {
     font-size: 1.8rem;
+  }
+  .wrapper {
+    max-width: var(--max-width);
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
+  .wrapper .row {
+    margin: 50px 0 3px 50px;
+  }
+  .wrapper .row section {
+    padding: 1.4rem 1.4rem 1.75rem;
+  }
+  .wrapper .row section .details .timeline-item-title {
+    font-size: 2rem;
+  }
+  .wrapper .row section .details span {
+    font-size: 1.1rem;
+  }
+  .wrapper .row section li {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1400px) {
