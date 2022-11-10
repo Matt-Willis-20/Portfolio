@@ -37,8 +37,7 @@
     --icon-color-2: var(--primary-green);
     --light-underline: rgba(66, 66, 66, 0.5);
     --project-border: none;
-    --max-width: 1200px;
-    --hover-interest: none;
+    --max-width: 1250px;
     --background-pattern: none;
 }
 
@@ -64,7 +63,6 @@
     --light-underline: rgba(116, 230, 22, 0.7);
     --polygon-color: rgba(124, 124, 124, 0.15);
     --icon-color-2: var(--primary-black);
-    --hover-interest: var(--primary-green);
     --background-pattern: none;
 }
 
@@ -196,7 +194,7 @@ button {
     border: 1px solid var(--icon-color);
     border-radius: 5px;
     height: 40px;
-    box-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
     @include flex-center-space-between;
     margin: 0 auto;
     transition: .1s;
@@ -237,6 +235,8 @@ main {
     padding: 0 1rem;
     max-width: var(--max-width);
     margin: 0 auto;
+    
+        
 }
 
 .section-padding {
@@ -301,6 +301,10 @@ abbr[title] {
 
 
 @media screen and (min-width: 1000px) {
+    h2 {
+        font-size: 3rem;
+    }
+    
     p {
         font-size: 1.2rem;
     }
@@ -574,12 +578,12 @@ header {
 #Intro {
     min-height: calc(100vh - 60px);
     @include flex-align-center;
-
+   
     #hero-container {
         margin: 0 auto;
         display: grid;
         gap: 1.5rem;
-
+        
         .hero-title {
             display: flex;
             flex-direction: column;
@@ -836,6 +840,45 @@ header {
         margin-bottom: 2rem;
     }
 
+    .experience-images-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  
+        margin-bottom: 4rem;
+        .experience-img-container {
+            transition: 500ms ease;
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 1/1;
+            img {
+                width: 100%;
+                margin-bottom: -4px;
+            }
+            span {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                line-height: 1.3;
+                translate: -50% -50%;
+                padding: 0.6rem 1rem;
+                text-align: center;
+                font-size: 1.8rem;
+                width: 80%;
+                color: white;
+                font-family: Roboto;
+                background-color: rgba(0, 0, 0, 0.5);
+                transition: 350ms ease;
+            }
+        } 
+    }
+
+    .experience-images-gallery:has(div:hover) div:not(:hover){
+        scale: 0.8;
+        opacity: 0.5;
+    }
+
+  
+
+
     .tech-skills-container {
         ul {
             padding: 1rem 0 3rem;
@@ -1046,45 +1089,7 @@ footer {
     }
 }
 
-.interests-container {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 2rem;
 
-    .interest-container {
-        @include centered-flex;
-        background-color: var(--logo-container-background-color);
-        flex-direction: column;
-        padding: 1.5rem 1rem;
-        border-radius: 5px 5px 0 0;
-        border-bottom: 4px solid var(--icon-color);
-        transition: 0.1s;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-
-        &:hover span {
-            color: var(--hover-interest);
-        }
-
-        i {
-            font-size: 2.5rem;
-        }
-
-        span {
-            font-family: 'Bebas Neue', cursive;
-            font-size: 2rem;
-            letter-spacing: 0.05em;
-            margin: 0.5rem;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1rem;
-        }
-    }
-}
 
 .skills {
     position: relative;
@@ -1183,7 +1188,7 @@ footer {
 
                 .timeline-item-title {
                     font-size: 1.4rem;
-                    letter-spacing: 0.1rem;
+                    letter-spacing: 0.15rem;
                 }
                 span {
                     margin-bottom: 0.5rem;
@@ -1249,11 +1254,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .interests-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.75rem;
-    }
-
+    
     .skills {
         .tech-skills-container {
             ul {
@@ -1354,10 +1355,6 @@ footer {
 
 
 @media screen and (min-width: 1400px) {
-    .interests-container {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-    }
 
     .skills {
         padding: 0;
@@ -1768,7 +1765,7 @@ footer {
 @media screen and (min-width: 1200px) {
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 4rem 2.5rem;
+        gap: 4rem 3.25rem;
         margin-bottom: 5rem;
 
         .project-container {
