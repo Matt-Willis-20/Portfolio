@@ -582,7 +582,7 @@ header {
     #hero-container {
         margin: 0 auto;
         display: grid;
-        gap: 1.5rem;
+        gap: 1.75rem;
         
         .hero-title {
             display: flex;
@@ -632,8 +632,8 @@ header {
             @include centered-flex;
 
             .header-img-container {
-                height: clamp(50px, 45vw, 230px);
-                width: clamp(50px, 45vw, 230px);
+                height: clamp(50px, 40vw, 230px);
+                width: clamp(50px, 40vw, 230px);
                 @include centered-flex;
                 border-radius: 50%;
                 border: 2px solid var(--img-container-outline-color);
@@ -756,6 +756,16 @@ header {
         }
     }
 }
+
+
+@media screen and (min-width: 1800px) {
+    #Intro {
+        #hero-container {
+            gap: 2rem;  
+        }
+    }
+}
+
 
 /* ---------------- HOME PAGE PROJECTS ANIMATIONS ------------ */
 

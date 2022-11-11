@@ -505,7 +505,7 @@ header .active .bar:nth-child(3) {
 #Intro #hero-container {
   margin: 0 auto;
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 #Intro #hero-container .hero-title {
   display: flex;
@@ -550,8 +550,8 @@ header .active .bar:nth-child(3) {
   justify-content: center;
 }
 #Intro #hero-container .intro-image-container .header-img-container {
-  height: clamp(50px, 45vw, 230px);
-  width: clamp(50px, 45vw, 230px);
+  height: clamp(50px, 40vw, 230px);
+  width: clamp(50px, 40vw, 230px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -652,6 +652,11 @@ header .active .bar:nth-child(3) {
   }
   #Intro #hero-container .portfolio-btn .portfolio-btn-container .icon-container i {
     font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #Intro #hero-container {
+    gap: 2rem;
   }
 }
 /* ---------------- HOME PAGE PROJECTS ANIMATIONS ------------ */
