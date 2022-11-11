@@ -550,8 +550,8 @@ header .active .bar:nth-child(3) {
   justify-content: center;
 }
 #Intro #hero-container .intro-image-container .header-img-container {
-  height: clamp(50px, 40vw, 230px);
-  width: clamp(50px, 40vw, 230px);
+  height: clamp(50px, 45vw, 230px);
+  width: clamp(50px, 45vw, 230px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,7 +573,7 @@ header .active .bar:nth-child(3) {
 #Intro #hero-container .portfolio-btn .portfolio-btn-container {
   background-color: var(--portfolio-btn-color);
   padding: 0.5rem 0.75rem;
-  width: 200px;
+  min-width: 200px;
   text-transform: uppercase;
   font-family: monospace;
   border: 1px solid var(--icon-color);
@@ -586,11 +586,11 @@ header .active .bar:nth-child(3) {
   transition: 0.1s;
 }
 #Intro #hero-container .portfolio-btn .portfolio-btn-container:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 #Intro #hero-container .portfolio-btn .portfolio-btn-container:active {
   box-shadow: none;
-  transform: translate(2px, 2px);
+  transform: translate(3px, 3px);
 }
 #Intro #hero-container .portfolio-btn .portfolio-btn-container span {
   font-weight: 600;
@@ -621,7 +621,6 @@ header .active .bar:nth-child(3) {
 @media screen and (min-width: 1200px) {
   #Intro #hero-container {
     padding-top: 0;
-    gap: 1rem;
   }
   #Intro #hero-container .hero-title .welcome-text {
     font-size: clamp(2rem, 15vw, 8rem);
@@ -746,6 +745,10 @@ header .active .bar:nth-child(3) {
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 4rem;
 }
+.skills-container .experience-images-gallery:has(div:hover) div:not(:hover) {
+  scale: 0.75;
+  opacity: 0.5;
+}
 .skills-container .experience-images-gallery .experience-img-container {
   transition: 500ms ease;
   overflow: hidden;
@@ -768,12 +771,13 @@ header .active .bar:nth-child(3) {
   width: 80%;
   color: white;
   font-family: Roboto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   transition: 350ms ease;
+  opacity: 0;
 }
-.skills-container .experience-images-gallery:has(div:hover) div:not(:hover) {
-  scale: 0.8;
-  opacity: 0.5;
+.skills-container .experience-img-container:hover span {
+  opacity: 1;
+  transition: 500ms ease;
 }
 .skills-container .tech-skills-container ul {
   padding: 1rem 0 3rem;
