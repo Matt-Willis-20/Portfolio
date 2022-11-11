@@ -632,8 +632,8 @@ header {
             @include centered-flex;
 
             .header-img-container {
-                height: clamp(50px, 55vw, 230px);
-                width: clamp(50px, 55vw, 230px);
+                height: clamp(50px, 45vw, 230px);
+                width: clamp(50px, 45vw, 230px);
                 @include centered-flex;
                 border-radius: 50%;
                 border: 2px solid var(--img-container-outline-color);

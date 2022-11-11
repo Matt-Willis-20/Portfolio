@@ -550,8 +550,8 @@ header .active .bar:nth-child(3) {
   justify-content: center;
 }
 #Intro #hero-container .intro-image-container .header-img-container {
-  height: clamp(50px, 55vw, 230px);
-  width: clamp(50px, 55vw, 230px);
+  height: clamp(50px, 45vw, 230px);
+  width: clamp(50px, 45vw, 230px);
   display: flex;
   align-items: center;
   justify-content: center;
