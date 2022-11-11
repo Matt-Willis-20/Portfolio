@@ -157,7 +157,7 @@ button:hover {
 .view-all-btn {
   background-color: var(--portfolio-btn-color);
   padding: 0.5rem 0.75rem;
-  width: 218px;
+  min-width: 218px;
   text-transform: uppercase;
   font-family: monospace;
   border: 1px solid var(--icon-color);
