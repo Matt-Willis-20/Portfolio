@@ -196,20 +196,6 @@ filterButtons.forEach(filterButton => filterButton.addEventListener('click', fil
 filterButtons.forEach(filterButton => filterButton.addEventListener('click', changeColor));
 
 
-// CHANGE PROFILE IMAGE ON MOUSEOVER
-
-const profileImages = document.querySelectorAll('.header-img');
-
-function swapImage() {
-  console.log("click");
-}
-
-profileImages.forEach(image => image.addEventListener('click', swapImage));
-
-
-
-
-
 
 
 // footer date
