@@ -157,7 +157,7 @@ button:hover {
 .view-all-btn {
   background-color: var(--portfolio-btn-color);
   padding: 0.5rem 0.75rem;
-  min-width: 218px;
+  width: 225px;
   text-transform: uppercase;
   font-family: monospace;
   border: 1px solid var(--icon-color);
@@ -254,6 +254,21 @@ abbr[title] {
   }
   .section-padding {
     padding: 2rem;
+  }
+  .view-all-btn {
+    padding: 0.75rem 1rem;
+    width: 260px;
+    height: 50px;
+  }
+  .view-all-btn span {
+    font-size: 1rem;
+  }
+  .view-all-btn .icon-container {
+    height: 27px;
+    width: 27px;
+  }
+  .view-all-btn .icon-container i {
+    font-size: 0.85rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -550,8 +565,8 @@ header .active .bar:nth-child(3) {
   justify-content: center;
 }
 #Intro #hero-container .intro-image-container .header-img-container {
-  height: clamp(50px, 45vw, 230px);
-  width: clamp(50px, 45vw, 230px);
+  height: clamp(50px, 45vw, 200px);
+  width: clamp(50px, 45vw, 200px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,7 +647,7 @@ header .active .bar:nth-child(3) {
     max-width: 600px;
   }
   #Intro #hero-container .intro-image-container {
-    margin-bottom: 0.5rem;
+    margin-bottom: -0.5rem;
   }
   #Intro #hero-container .portfolio-btn {
     margin: 1.5rem 0 1rem;
@@ -941,7 +956,7 @@ footer .links-items-container .links-items a {
 .about-me-hero .about-me-intro .about-me-content .about-me-text {
   margin-bottom: 2rem;
   padding: 0 2rem;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
 }
 .about-me-hero .about-me-intro .about-me-content a {
@@ -961,6 +976,9 @@ footer .links-items-container .links-items a {
 }
 .about-me-hero .about-me-intro .about-me-content a .icon-container i {
   font-size: 0.7rem;
+}
+.about-me-hero .about-me-intro .about-me-content a .icon-container svg {
+  padding: 2px 0 0 0;
 }
 
 .skills {
@@ -1109,7 +1127,7 @@ footer .links-items-container .links-items a {
     font-size: 1.6rem;
   }
   .skills .tech-skills-container ul li .skill-icon svg {
-    padding: 2px 0 0 0;
+    padding: 0 0 0 0;
   }
   .wrapper {
     max-width: var(--max-width);
@@ -1380,17 +1398,15 @@ footer .links-items-container .links-items a {
 .filter-buttons-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 2rem;
-}
-.filter-buttons-container span {
-  margin-right: 0.5rem;
-  display: none;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 .filter-buttons-container .filter-button {
   padding: 0.3rem 0.6rem;
   border-radius: 3px;
-  margin: 0.3rem 0.6rem 0.3rem 0rem;
   background-color: rgb(235, 235, 235);
   font-size: 0.75rem;
 }
@@ -1403,7 +1419,7 @@ footer .links-items-container .links-items a {
 
 .projects-container {
   display: grid;
-  margin: 1.5rem 0 3rem;
+  margin: 1rem 0 3rem;
   gap: 2rem;
   /* the show class will be added to filtered elements */
 }
@@ -1468,17 +1484,48 @@ footer .links-items-container .links-items a {
   gap: 0.75rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 425px) {
+  .filter-text {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 650px) {
+  .filter-buttons-container {
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .filter-buttons-container .filter-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem 2rem;
+    gap: 2.5rem 2rem;
+    margin: 2rem 0 5rem;
+  }
+  .projects-container .project-container {
+    padding: 1.25rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-container {
+    gap: 3rem 2.5rem;
+  }
+  .filter-text {
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter-text {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+  }
+  .filtered-number {
+    font-size: 1.1rem;
+  }
   .projects-container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem 3.25rem;
-    margin-bottom: 5rem;
+    gap: 3.5rem 3rem;
   }
   .projects-container .project-container {
     padding: 1.25rem;

@@ -188,7 +188,7 @@ button {
 .view-all-btn {
     background-color: var(--portfolio-btn-color);
     padding: 0.5rem 0.75rem;
-    min-width: 218px;
+    width: 225px;
     text-transform: uppercase;
     font-family: monospace;
     border: 1px solid var(--icon-color);
@@ -296,6 +296,24 @@ abbr[title] {
 
     .section-padding {
         padding: 2rem;
+    }
+
+    .view-all-btn {
+        padding: 0.75rem 1rem;
+        width: 260px;
+        height: 50px;
+      
+        span {
+            font-size: 1rem;
+        }
+    
+        .icon-container {
+            height: 27px;
+            width: 27px;
+            i {
+                font-size: 0.85rem;
+            }
+        }
     }
 }
 
@@ -632,8 +650,8 @@ header {
             @include centered-flex;
 
             .header-img-container {
-                height: clamp(50px, 45vw, 230px);
-                width: clamp(50px, 45vw, 230px);
+                height: clamp(50px, 45vw, 200px);
+                width: clamp(50px, 45vw, 200px);
                 @include centered-flex;
                 border-radius: 50%;
                 border: 2px solid var(--img-container-outline-color);
@@ -727,7 +745,7 @@ header {
             }
 
             .intro-image-container {
-                margin-bottom: 0.5rem;
+                margin-bottom: -0.5rem;
             }
 
             .portfolio-btn {
@@ -890,7 +908,6 @@ header {
     opacity: 1;
     transition: 500ms ease;
   }
-
 
     .tech-skills-container {
         ul {
@@ -1075,7 +1092,7 @@ footer {
             .about-me-text {
                 margin-bottom: 2rem;
                 padding: 0 2rem;
-                max-width: 700px;
+                max-width: 800px;
                 text-align: center;
             }
 
@@ -1095,6 +1112,9 @@ footer {
 
                     i {
                         font-size: 0.7rem;
+                    }
+                    svg {
+                        padding: 2px 0 0 0;
                     }
                 }
             }
@@ -1283,7 +1303,7 @@ footer {
                             font-size: 1.6rem;
                         }
                         svg {
-                            padding: 2px 0 0 0;
+                            padding: 0 0 0 0;
                         }
                     }
                 }
@@ -1660,19 +1680,14 @@ footer {
 
 
 .filter-buttons-container {
-    @include flex-align-center;
+    @include centered-flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-
-    span {
-        margin-right: 0.5rem;
-        display: none;
-    }
-
+    gap: 0.6rem;
+    margin-top: 1rem;
     .filter-button {
         padding: .3rem .6rem;
         border-radius: 3px;
-        margin: 0.3rem 0.6rem 0.3rem 0rem;
         background-color: rgb(235, 235, 235);
         font-size: 0.75rem;
 
@@ -1689,7 +1704,7 @@ footer {
 
 .projects-container {
     display: grid;
-    margin: 1.5rem 0 3rem;
+    margin: 1rem 0 3rem;
     gap: 2rem;
 
     .filterDiv {
@@ -1768,18 +1783,56 @@ footer {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 425px) {
+    .filter-text {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .filter-buttons-container {   
+        gap: 0.75rem;
+        margin-bottom: 1rem;   
+        .filter-button {
+            padding: .5rem 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem 2rem;
+        gap: 2.5rem 2rem;
+        margin: 2rem 0 5rem;
+
+        .project-container {
+            padding: 1.25rem 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        gap: 3rem 2.5rem;
+        
+    }
+    .filter-text {
+        margin-left: 2rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .filter-text {
+        margin-left: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .filtered-number {
+        font-size: 1.1rem;
+    }
+   
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 4rem 3.25rem;
-        margin-bottom: 5rem;
+        gap: 3.5rem 3rem;
 
         .project-container {
             padding: 1.25rem;
