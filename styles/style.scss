@@ -869,7 +869,7 @@ header {
 
     .experience-images-gallery {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);  
+        grid-template-columns: repeat(2, 1fr);  
         margin-bottom: 4rem;
         &:has(div:hover) div:not(:hover){
                 scale: 0.75;
@@ -890,9 +890,9 @@ header {
                 top: 50%;
                 line-height: 1.3;
                 translate: -50% -50%;
-                padding: 0.6rem 1rem;
+                padding: 0.3rem 0.5rem;
                 text-align: center;
-                font-size: 1.8rem;
+                font-size: 0.8rem;
                 width: 80%;
                 color: white;
                 font-family: Roboto;
@@ -902,7 +902,6 @@ header {
             }
         } 
     }
-
 
   .experience-img-container:hover span {
     opacity: 1;
@@ -957,6 +956,69 @@ header {
     }
 }
 
+@media screen and (min-width: 425px) {
+    .skills-container {
+        .experience-images-gallery {
+            .experience-img-container {
+                span {
+                    font-size: 1.1rem;
+                }
+            } 
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .skills-container {
+        .experience-images-gallery {
+            grid-template-columns: repeat(4, 1fr);  
+            .experience-img-container {
+                span {
+                    padding: 0.3rem 0.5rem;
+                    font-size: 0.8rem;
+                    width: 80%;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .skills-container {
+        .experience-images-gallery {
+            .experience-img-container {
+                span {
+                    font-size: 1rem;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .skills-container {
+        .experience-images-gallery {
+            .experience-img-container {
+                span {
+                    font-size: 1.4rem;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .skills-container {
+        .experience-images-gallery {
+            .experience-img-container {
+                span {
+                    font-size: 1.8rem;
+                }
+            } 
+        }
+    }
+}
 
 
 /*------------ CONTACT STYLING ----------*/
