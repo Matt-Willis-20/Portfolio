@@ -219,6 +219,7 @@ button {
         width: 20px;
         @include centered-flex;
         border-radius: 50%;
+        margin-left: 0.5rem;
         background: var(--primary-grey);
 
         i {
@@ -1356,6 +1357,10 @@ footer {
             }
         }
     }
+}
+
+.about-me-page .view-all-btn {
+    margin-bottom: 8rem;
 }
 
 @media screen and (min-width: 375px) {
