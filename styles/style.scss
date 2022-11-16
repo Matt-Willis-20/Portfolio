@@ -94,7 +94,6 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     background-image: var(--background-pattern);
-    
 }
 
 h1,
@@ -1048,13 +1047,13 @@ header {
 
         .social-media-container {
             display: flex;
-            justify-content: flex-start;
             flex-wrap: wrap;
             gap: 1.5rem 2rem;
-            padding: 1rem 0 2.5rem;
+            padding-top: 1rem;
 
             .social-link-container {
                 @include flex-align-center;
+                min-width: 120px;
                 &:hover {
                     animation: bounce 0.2s ease;
                 }
@@ -1089,7 +1088,7 @@ header {
     #Contact {
         .contact-info {
             .social-media-container {
-                gap: 4rem;
+                gap: 3.5rem;
                 .social-link-container {  
                     .social-media-item {
                         margin-right: 0.75rem;
@@ -1114,7 +1113,6 @@ header {
 
 footer {
     text-align: center;
-    padding: 1rem 0;
     color: var(--background-color);
     background-color: rgb(39, 40, 43);
     margin-top: 60px;
@@ -1132,12 +1130,17 @@ footer {
             text-align: left;
             padding: 3rem 1.5rem 4.5rem;
             max-width: 300px;
-
             a {
                 color: white;
                 font-size: 0.8rem;
                 text-transform: uppercase;
+                letter-spacing: 0.1em;
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                }
             }
+        
         }
     }
 }
@@ -1147,6 +1150,19 @@ footer {
     font-weight: 600;
 }
 
+
+@media screen and (min-width: 768px) {
+    footer {
+        .links-items-container {
+            .links-items {
+                gap: 1.5rem 3rem;           
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
 
 /*---------  ABOUT ME PAGE  ---------------- */
 

@@ -901,14 +901,14 @@ header .active .bar:nth-child(3) {
 }
 #Contact .contact-info .social-media-container {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1.5rem 2rem;
-  padding: 1rem 0 2.5rem;
+  padding-top: 1rem;
 }
 #Contact .contact-info .social-media-container .social-link-container {
   display: flex;
   align-items: center;
+  min-width: 120px;
 }
 #Contact .contact-info .social-media-container .social-link-container:hover {
   -webkit-animation: bounce 0.2s ease;
@@ -938,7 +938,7 @@ header .active .bar:nth-child(3) {
 
 @media screen and (min-width: 1200px) {
   #Contact .contact-info .social-media-container {
-    gap: 4rem;
+    gap: 3.5rem;
   }
   #Contact .contact-info .social-media-container .social-link-container .social-media-item {
     margin-right: 0.75rem;
@@ -955,7 +955,6 @@ header .active .bar:nth-child(3) {
 /* ---------- FOOTER STYLING ---------- */
 footer {
   text-align: center;
-  padding: 1rem 0;
   color: var(--background-color);
   background-color: rgb(39, 40, 43);
   margin-top: 60px;
@@ -978,6 +977,11 @@ footer .links-items-container .links-items a {
   color: white;
   font-size: 0.8rem;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+footer .links-items-container .links-items a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .highlight {
@@ -985,6 +989,14 @@ footer .links-items-container .links-items a {
   font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
+  footer .links-items-container .links-items {
+    gap: 1.5rem 3rem;
+  }
+  footer .links-items-container .links-items a {
+    font-size: 0.9rem;
+  }
+}
 /*---------  ABOUT ME PAGE  ---------------- */
 .about-me-hero {
   width: 100%;
