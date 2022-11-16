@@ -901,12 +901,14 @@ header .active .bar:nth-child(3) {
 }
 #Contact .contact-info .social-media-container {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
   padding: 1rem 0 2.5rem;
 }
 #Contact .contact-info .social-media-container .social-link-container {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
 }
 #Contact .contact-info .social-media-container .social-link-container:hover {
   -webkit-animation: bounce 0.2s ease;
@@ -934,6 +936,22 @@ header .active .bar:nth-child(3) {
   color: var(--text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  #Contact .contact-info .social-media-container {
+    gap: 4rem;
+  }
+  #Contact .contact-info .social-media-container .social-link-container .social-media-item {
+    margin-right: 0.75rem;
+    height: 50px;
+    width: 50px;
+  }
+  #Contact .contact-info .social-media-container .social-link-container .social-media-item i {
+    font-size: 1.8rem;
+  }
+  #Contact .contact-info .social-media-container .social-link-container span {
+    font-size: 1.75rem;
+  }
+}
 /* ---------- FOOTER STYLING ---------- */
 footer {
   text-align: center;

@@ -1048,11 +1048,13 @@ header {
 
         .social-media-container {
             display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 1.5rem 2rem;
             padding: 1rem 0 2.5rem;
 
             .social-link-container {
                 @include flex-align-center;
-                margin-right: 2rem;
                 &:hover {
                     animation: bounce 0.2s ease;
                 }
@@ -1083,7 +1085,30 @@ header {
     }
 }
 
-
+@media screen and (min-width: 1200px) {
+    #Contact {
+        .contact-info {
+            .social-media-container {
+                gap: 4rem;
+                .social-link-container {  
+                    .social-media-item {
+                        margin-right: 0.75rem;
+                        height: 50px;
+                        width: 50px;
+                        i {
+                            font-size: 1.8rem;
+                        }
+                    }
+    
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
 
 /* ---------- FOOTER STYLING ---------- */
 
