@@ -1671,7 +1671,6 @@ footer {
                 li {
                     font-size: 1rem;
                     line-height: 1.6;
-                    color: rgb(73, 73, 73)
                 }
             }
 
@@ -1689,6 +1688,16 @@ footer {
                 }
             }
         }
+    }
+}
+
+#back-to-blog {
+    color: var(--text-color);
+    padding: 0.5rem 0.75rem;
+    background-color: var(--logo-container-background-color);
+    &:hover {
+        background-color: var(--accent-color);
+        color: var(--background-color);
     }
 }
 
@@ -2051,7 +2060,6 @@ footer {
         }
     }
 }
-
 
 // ------------------------------------------------------------------------------------- 
 // PROJECT SUMMARY PAGES

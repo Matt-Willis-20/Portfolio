@@ -1373,7 +1373,6 @@ footer p {
 .blog-container .blog-content-container .blog-text-container ul li {
   font-size: 1rem;
   line-height: 1.6;
-  color: rgb(73, 73, 73);
 }
 .blog-container .blog-content-container .blog-text-container .blog-text-image {
   width: 100%;
@@ -1384,6 +1383,16 @@ footer p {
 }
 .blog-container .blog-content-container .blog-text-container .inline-blog-image img {
   width: 100%;
+}
+
+#back-to-blog {
+  color: var(--text-color);
+  padding: 0.5rem 0.75rem;
+  background-color: var(--logo-container-background-color);
+}
+#back-to-blog:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
 }
 
 .recommended-blogs-container {
