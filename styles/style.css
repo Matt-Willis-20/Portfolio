@@ -1013,8 +1013,8 @@ footer p {
 }
 .about-me-hero .about-me-intro .header-img-container {
   border-radius: 50%;
-  height: clamp(50px, 45vw, 230px);
-  width: clamp(50px, 45vw, 230px);
+  height: clamp(50px, 40vw, 230px);
+  width: clamp(50px, 40vw, 230px);
   border: 2px solid var(--img-container-outline-color);
   overflow: hidden;
   margin: 1rem auto 2rem;
@@ -1030,7 +1030,7 @@ footer p {
   text-align: center;
 }
 .about-me-hero .about-me-intro .about-me-content a {
-  width: 180px;
+  width: 200px;
   height: 42px;
   padding: 0.4rem 0.8rem;
 }
