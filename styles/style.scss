@@ -1201,26 +1201,20 @@ footer {
 
 .about-me-hero {
     width: 100%;
-    min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    h1 {
-        text-align: center;
-        margin-bottom: 1rem;
-        font-size: clamp(1.5rem, 13vw, 5rem);
-    }
-
     .about-me-intro {
         @include centered-flex;
+        min-height: calc(100vh - 270px);
         flex-direction: column;
         width: 100%;
 
         .header-img-container {
             border-radius: 50%;
-            height: clamp(50px, 55vw, 250px);
-            width: clamp(50px, 55vw, 250px);
+            height: clamp(50px, 45vw, 230px);
+            width: clamp(50px, 45vw, 230px);
             border: 2px solid var(--img-container-outline-color);
             overflow: hidden;
             margin: 0 auto 2rem;
@@ -1391,9 +1385,7 @@ footer {
     }
 }
 
-.about-me-page .view-all-btn {
-    margin-bottom: 8rem;
-}
+
 
 @media screen and (min-width: 375px) {
     .wrapper {
