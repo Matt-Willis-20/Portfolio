@@ -1017,7 +1017,7 @@ footer p {
   width: clamp(50px, 45vw, 230px);
   border: 2px solid var(--img-container-outline-color);
   overflow: hidden;
-  margin: 0 auto 2rem;
+  margin: 1rem auto 2rem;
 }
 .about-me-hero .about-me-intro .header-img-container img {
   height: 100%;
@@ -1026,7 +1026,7 @@ footer p {
 .about-me-hero .about-me-intro .about-me-content .about-me-text {
   margin-bottom: 2rem;
   padding: 0 2rem;
-  max-width: 800px;
+  max-width: 700px;
   text-align: center;
 }
 .about-me-hero .about-me-intro .about-me-content a {
