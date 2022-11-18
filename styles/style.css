@@ -588,7 +588,7 @@ header .active .bar:nth-child(3) {
 #Intro #hero-container .portfolio-btn .portfolio-btn-container {
   background-color: var(--portfolio-btn-color);
   padding: 0.5rem 0.75rem;
-  min-width: 200px;
+  width: 220px;
   text-transform: uppercase;
   font-family: monospace;
   border: 1px solid var(--icon-color);
